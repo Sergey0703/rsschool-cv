@@ -2,8 +2,8 @@
 ## **Baliasnyi Serghii**
 
 ## **Contacts:**
-**telegram:** Sergey070373 
-**email:** sergey070373@gmail.com
+* **telegram:** Sergey070373 
+* **email:** sergey070373@gmail.com
 
 ## **Information about me:**
 * Now I am programming accounting programs and ERP systems
