@@ -19,6 +19,7 @@
 * **JavaScript** - learning 
 
 
+
 ## *Education:*
 * 1990—1995 Sevastopol State University - higher education in microelectronics 
 * 2009- 2011 Kherson State University -higher education in economix
