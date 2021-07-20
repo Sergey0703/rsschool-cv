@@ -1,5 +1,5 @@
 body{
-    background-color: cornflowerblue;
+    background-color: #f7f7ff;
 }
 .main-class{
     width: 700px;
@@ -11,11 +11,73 @@ display: flex;
 min-height: 600px;
 }
 .left-side{
-    background-color: blue;
-    width: 200px;
+    background-color: #0487cc;
+    color: #fff;
+    width: 300px;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
 }
+
+  .round {
+    width: 85px; height: 85px; /* Ширина и высота */
+    border-radius: 50%; /* Превращаем в круг */
+    background: url(s14.JPG) no-repeat 0px 0px; /* Параметры фона */
+    background-size: auto 100px; /* Высота фотографии равна высоте элемента */
+    
+    display: block; 
+    margin: 0 auto;
+    
+   }
+
+.shortref{
+    padding: 30px 0 0 0; 
+}
+  
+.left-side ul{
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+.left-side ul li {
+    list-style: none;
+      
+  }
+
+  .item{
+      font-size: 20px;
+      font-weight: bold;
+  }
+
 
 .right-side{
     background-color: #fff;
     width: 400px;
+    padding: 10px 10px;
+}
+.hi{
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.hytext{
+    color: #0487cc;
+    font-weight: bold;  
+}
+.prof{
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;  
+    margin: 10px 0 40px 0; 
+    color: #757575;
+}
+.info{
+       margin: 10px 0 50px 0; 
+}
+
+.education{
+    margin: 10px 0 50px 0; 
+}
+
+.languages{
+    margin: 10px 0 50px 0; 
 }
