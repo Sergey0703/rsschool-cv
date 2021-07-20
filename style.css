@@ -8,7 +8,7 @@ body{
 
 .section-prof{
 display: flex;
-min-height: 600px;
+min-height: 400px;
 }
 .left-side{
     background-color: #0487cc;
@@ -19,10 +19,10 @@ min-height: 600px;
 }
 
   .round {
-    width: 85px; height: 85px; /* Ширина и высота */
+    width: 110px; height: 110px; /* Ширина и высота */
     border-radius: 50%; /* Превращаем в круг */
-    background: url(s14.JPG) no-repeat 0px 0px; /* Параметры фона */
-    background-size: auto 100px; /* Высота фотографии равна высоте элемента */
+    background: url(cat.jpg) no-repeat 0px 0px; /* Параметры фона */
+    background-size: auto 110px; /* Высота фотографии равна высоте элемента */
     
     display: block; 
     margin: 0 auto;
@@ -30,12 +30,12 @@ min-height: 600px;
    }
 
 .shortref{
-    padding: 30px 0 0 0; 
+    padding: 10px 0 0 0; 
 }
   
 .left-side ul{
     padding-left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 .left-side ul li {
     list-style: none;
@@ -43,7 +43,7 @@ min-height: 600px;
   }
 
   .item{
-      font-size: 20px;
+      font-size: 16px;
       font-weight: bold;
   }
 
@@ -71,13 +71,13 @@ min-height: 600px;
     color: #757575;
 }
 .info{
-       margin: 10px 0 50px 0; 
+       margin: 10px 0 30px 0; 
 }
 
 .education{
-    margin: 10px 0 50px 0; 
+    margin: 10px 0 30px 0; 
 }
 
 .languages{
-    margin: 10px 0 50px 0; 
+    margin: 10px 0 30px 0; 
 }
