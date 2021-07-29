@@ -1,0 +1,121 @@
+.header{
+    background-color: #000000;
+    color: #ffffff;
+
+}
+.container{
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding: 75px 0px;
+   
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+   /* background-image: url("/assets/img/logo.png"); */
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-img{
+      width: 50px;
+      margin-right: 10px;
+  }
+
+.louvre{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Forum;
+    font-weight: 400;
+}
+
+.header-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 720px;
+    padding-left: 200px;
+    font-family: Roboto;
+    align-items: center;
+}
+
+.item-list{
+    padding-left: 20px;
+    font-size: 22px;
+   
+}
+.item-href{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+/********************************************************************************************/
+.container-welcome{
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding: 75px 0px; 
+    
+}
+
+.welcome{
+    background-color: #000000;
+    background-image: url("/assets/img/museum_back.png");
+    background-position: calc(100% - 0px) calc(100% - 0px);
+    background-repeat: no-repeat;
+}
+.welcome-area{
+   color:#ffffff;
+   font-family: Forum;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+}
+.welcome-text-head{
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;  
+}
+.welcome-text{
+    margin-top: 25px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 28px;  
+}
+.welcome-btn {
+    background-color: #710707; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    width: 360px;
+    height: 75px;
+    margin-top: 75px;
+    border-radius: 10px;
+  }
+/*****************************************************************************/
+  .visiting-text-head{
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;  
+    color: #9D8665;
+    margin-bottom: 25px;
+}
+
+.visiting-hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #710707; /* Цвет линии для остальных браузеров */
+    background-color:#710707; /* Цвет линии для браузера Firefox и Opera */
+    height: 3px; /* Толщина линии */
+   }
