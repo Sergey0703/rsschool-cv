@@ -32,7 +32,15 @@
     color: #ffffff;
     font-family: Forum;
     font-weight: 400;
+    text-transform: uppercase; 
 }
+.louvre:hover {
+    color: #9D8665;
+  }
+
+  .louvre:active {
+    color: #9D8665;
+  }
 
 .header-list{
     display: flex;
@@ -53,6 +61,13 @@
     color: #ffffff;
     font-weight: 200;
 }
+.item-href:hover {
+    color: #9D8665;
+  }
+
+  .item-href:active {
+    color: #9D8665;
+  }
 
 /********************************************************************************************/
 .container-welcome{
@@ -83,7 +98,8 @@
 .welcome-text-head{
     font-family: Forum;
     font-weight: 400;
-    font-size: 80px;  
+    font-size: 80px; 
+    text-transform: uppercase; 
 }
 .welcome-text{
     margin-top: 25px;
@@ -93,9 +109,10 @@
 }
 .welcome-btn {
     background-color: #710707; 
-    border: none;
+   /* border: none;*/
+    outline: none;
     color: white;
-    padding: 15px 32px;
+    padding-top: 26px;
     text-align: center;
     font-family: Roboto;
     font-weight: 300;
@@ -107,6 +124,10 @@
     margin-top: 75px;
     border-radius: 10px;
   }
+
+  .welcome-btn:hover {
+    background: #9D8665;
+  }
 /*****************************************************************************/
   .visiting-text-head{
     font-family: Forum;
@@ -115,6 +136,7 @@
     color: #9D8665;
     margin-bottom: 25px;
     position: relative;
+    text-transform: uppercase; 
 }
 
 .visiting-text-head::after {
@@ -151,6 +173,7 @@
    color: #9D8665;
    padding-top: 25px;
    position: relative;
+   text-transform: uppercase; 
    }
     
    .place-h4::after {
