@@ -203,3 +203,25 @@ html{
     padding-top: 16px; 
     line-height: 1.5;
    }
+   /***************************************************************************/
+   .explore{
+    background-color: #000000;
+   }
+   .explore-text-head{
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;  
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+    text-transform: uppercase; 
+}
+.explore-text-head::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #710707; 
+  }
