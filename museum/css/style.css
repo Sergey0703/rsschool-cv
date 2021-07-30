@@ -212,7 +212,7 @@ html{
     font-weight: 400;
     font-size: 80px;  
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
     position: relative;
     text-transform: uppercase; 
 }
@@ -225,3 +225,27 @@ html{
     height: 3px;
     background-color: #710707; 
   }
+  .explore-left{
+    color: #ffffff;  
+    max-width: 700px;
+  }
+  .explore-p{
+    margin-top: 25px;  
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 22px;  
+    padding-top: 16px; 
+    line-height: 1.5;
+    max-width: 630px;
+  }
+
+  .flex{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .explore-span{
+    color: #CAAA7D;
+   
+   }
