@@ -426,12 +426,21 @@ letter-spacing: 5px;
       row-gap: 20px; 
       column-gap: 40px;
   }
-  .byu-tickets-right{
+  .buy-tickets-right{
     display: flex;
+    flex-wrap: wrap;
+    /*row-gap: 20px; 
+    column-gap: 40px;*/
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(50% - 60px);
+
     }
 
   .ticket-head{
     padding-bottom: 50px;
+    font-family: Roboto;
     font-size: 28px;
     font-weight: 700;
     color: #ffffff;
@@ -500,3 +509,56 @@ letter-spacing: 5px;
    border-radius: 50%;
    background: #ffffff;
 }
+.amount-head{
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: right;
+}
+
+.tickets-amount{
+    display: flex;
+   /* flex-wrap: wrap;*/
+   flex-direction: column;
+   justify-content: flex-start; 
+    row-gap: 20px; 
+    column-gap: 40px;
+    color: #ffffff;
+    }
+
+    .amount-buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            border: 3px solid #ffffff;
+            margin-bottom: 75px;
+    }
+
+    .btn-amount {
+
+        padding: 10px;
+        color: #ffffff;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .amount-number{
+        width: 60px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .amount-head-small{
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 300; 
+    }
