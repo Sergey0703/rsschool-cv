@@ -32,30 +32,41 @@ html{
 }
 
 .logo{
-    font-size: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    row-gap: 20px; 
+    column-gap: 10px;
     align-items: center;
+    text-decoration: none;
   }
-  .logo-img{
-      width: 50px;
-      margin-right: 10px;
-  }
+  
+  .logo-icon{
+    background-image: url(/assets/img/logo.svg);
+    width: 48px;
+    height: 30px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+   }
 
-.louvre{
+  .logo-text{
     text-decoration: none;
     color: #ffffff;
     font-family: Forum;
     font-weight: 400;
+    font-size: 32px;
     text-transform: uppercase; 
-}
-.louvre:hover {
-    color: #9D8665;
+    padding-bottom: 0;
+    
   }
 
-  .louvre:active {
-    color: #9D8665;
+.logo:hover {
+    /*color: #9D8665;*/
+    filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
   }
+
+  
 
 .header-list{
     display: flex;
@@ -626,3 +637,5 @@ letter-spacing: 5px;
     }
 
     /*footer****************************************************************************/
+    
+    
