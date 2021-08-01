@@ -565,3 +565,17 @@ letter-spacing: 5px;
         font-weight: 700; 
         text-align: right; 
     }
+    .btn-amount-total{
+      width:150px;
+      height: 50px;
+      background-color: #ffffff; 
+      border: none;
+      color:#000000;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Roboto;
+      font-size: 22px;
+      font-weight: 300;
+    
+    }
