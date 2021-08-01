@@ -579,3 +579,50 @@ letter-spacing: 5px;
       font-weight: 300;
     
     }
+
+    /*contacts***********************************************************************/
+
+    .contacts-head{
+      font-family: Forum;
+      font-weight: 400;
+      font-size: 80px;  
+      color: #9D8665;
+      margin-bottom: 25px;
+      position: relative;
+      text-transform: uppercase;  
+    }
+
+    .contacts-head::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #710707; 
+    }
+
+    .contacts-main{
+      display:flex;
+      justify-content: space-between;
+      padding-top: 75px;
+    }
+    .contacts-h4{
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 28px; 
+      line-height: 1.5; 
+     }
+
+    .contacts-left{
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 22px; 
+      line-height: 1.8; 
+    }
+
+    .contacts-p{
+      padding-top: 50px;
+    }
+
+    /*footer****************************************************************************/
