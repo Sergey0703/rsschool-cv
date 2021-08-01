@@ -66,7 +66,6 @@ html{
     filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
   }
 
-  
 
 .header-list{
     display: flex;
@@ -106,25 +105,8 @@ letter-spacing: 5px;
     display: block; 
     /*display: table;*/
    }
-   .text-head{
-    font-family: Forum;
-    font-weight: 400;
-    font-size: 80px;  
-    color: #ffffff;
-    margin-bottom: 100px;
-    position: relative;
-    text-transform: uppercase; 
-}
-.text-head::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #710707; 
-  }
 
+   
 /********************************************************************************************/
 .container-welcome{
     max-width: 1440px; 
@@ -410,15 +392,7 @@ letter-spacing: 5px;
     position: relative;*/
     text-transform: uppercase; 
 }
-.video-title-head::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #710707; 
-  }
+
 
   .video-title-text{
     max-width: 720px;
