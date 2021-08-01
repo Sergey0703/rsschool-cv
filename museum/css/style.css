@@ -124,7 +124,7 @@ letter-spacing: 5px;
 
 .welcome{
     background-color: #000000;
-    background-image: url("/museum/assets/img/museum_back.png");
+    background-image: url("/assets/img/museum_back.png");
     background-repeat: no-repeat;
     min-height: 750px;
     background-size: 1215px 750px;
@@ -208,10 +208,7 @@ letter-spacing: 5px;
     padding-top: 50px;
    }
    
-   .place-href:hover{
-    
-   }
-
+ 
   
    .place-h4{
    font-family: Forum;
@@ -293,11 +290,11 @@ letter-spacing: 5px;
         align-items: center;
         width: 1440px;
         height: 700px;
-        background-image: url(/museum/assets/img/vposter.jpg);
+        background-image: url(/assets/img/vposter.jpg);
     
   }
   .btn-play{
-   background-image: url(/museum/assets/img/pgroup.svg);
+   background-image: url(/assets/img/pgroup.svg);
    width: 220px;
    height: 220px;
    cursor: pointer;
@@ -364,24 +361,24 @@ letter-spacing: 5px;
   }
 
 .btn-rewind-prev{
-    background-image: url(/museum/assets/img/btn-rewind-prev.svg);
+    background-image: url(/assets/img/btn-rewind-prev.svg);
     
 }
 
 .btn-play-small{
-    background-image: url(/museum/assets/img/btn-play-small.svg);
+    background-image: url(/assets/img/btn-play-small.svg);
 }
 
 .btn-rewind-next{
-    background-image: url(/museum/assets/img/btn-rewind-next.svg);
+    background-image: url(/assets/img/btn-rewind-next.svg);
 }
 
 .btn-volume{
-    background-image: url(/museum/assets/img/btn-volume.svg);
+    background-image: url(/assets/img/btn-volume.svg);
 }
 
 .btn-fullscr{
-    background-image: url(/museum/assets/img/btn-fullscr.svg);
+    background-image: url(/assets/img/btn-fullscr.svg);
 }
 
 .video-title{
