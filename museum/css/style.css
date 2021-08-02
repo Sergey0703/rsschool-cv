@@ -632,7 +632,10 @@ letter-spacing: 5px;
     .contacts-p{
       padding-top: 50px;
     }
-
+    .mail{
+      cursor: pointer;
+    }
+     
     /*footer****************************************************************************/
     .footer-main{
       display:flex;
@@ -690,16 +693,23 @@ letter-spacing: 5px;
       padding-top: 90px;
     }
     .social-item {
-      width: 48px;
-      height: 48px;
-      margin-right: 24px;
-      border-radius: 50%;
-      box-shadow: inset 0 0 0 1.5px #666;
-      transition: box-shadow .15s;
-      background-size: 24px;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: .3s;
+    
+    margin-left: 25px;
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    border-style: solid;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: white;
+    transition: 1s;
+    border-width: 1px;
+    cursor: pointer;
+  }
+  .social-item:hover {
+    /*color: #9D8665;*/
+    filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
   }
     .youtube {
       background-image: url(/assets/img/youtube.svg);
