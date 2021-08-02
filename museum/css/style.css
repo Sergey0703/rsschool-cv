@@ -335,6 +335,8 @@ letter-spacing: 5px;
    width: 220px;
    height: 220px;
    cursor: pointer;
+   background-color: unset;
+   border-width: 0;
   }
   /*.btn-play:hover {
     color: #9D8665;
@@ -355,6 +357,9 @@ letter-spacing: 5px;
     cursor: pointer;
     background-position: center center;
     background-repeat: no-repeat;
+    float: left;
+    background-color: unset;
+    border-width: 0;
     
 }
 .progress {
@@ -595,6 +600,7 @@ letter-spacing: 5px;
         font-family: Roboto;
         font-size: 32px;
         font-weight: 400;
+        min-width: 40px;
     }
     .amount-number{
         width: 60px;
@@ -603,6 +609,24 @@ letter-spacing: 5px;
         font-size: 22px;
         font-weight: 300;
     }
+
+    .amount-input{
+      height: 100%;
+      background-color: black;
+      color: white;
+      font-family: Roboto;
+      min-width: 40px;
+      border-style: none;
+      text-align: center;
+      font-stretch: wider;
+      font-size: 22px;
+      padding: 0 0;
+  }
+  .amount-input::-webkit-inner-spin-button,
+  .amount-input::-webkit-outer-spin-button,
+  .amount-input:focus {
+    display: none;
+}
 
     .amount-head-small{
         font-family: Roboto;
