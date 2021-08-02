@@ -383,7 +383,7 @@ letter-spacing: 5px;
 
 .video-title{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1440px;
     height: 85px;
@@ -712,7 +712,6 @@ letter-spacing: 5px;
     cursor: pointer;
   }
   .social-item:hover {
-    /*color: #9D8665;*/
     filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
   }
     .youtube {
