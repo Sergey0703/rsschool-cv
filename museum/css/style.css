@@ -719,8 +719,8 @@ letter-spacing: 5px;
 
     footer nav {
       max-height: 100px;
-      padding-left: 200px;
-      max-width: 555px;
+      padding-left: 150px;
+      max-width: 550px;
     }
     .footer-list{
      display: flex;
@@ -728,7 +728,7 @@ letter-spacing: 5px;
      flex-wrap: wrap;
      max-height: 150px;
      justify-content: space-between;
-     column-gap: 200px;
+     column-gap: 150px;
      }
      footer nav ul li{
        max-width: 200px;
