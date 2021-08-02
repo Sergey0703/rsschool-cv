@@ -191,6 +191,7 @@ letter-spacing: 5px;
    .visiting-places{
     max-width: 1440px;   
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px; 
     column-gap: 20px;
@@ -276,6 +277,7 @@ letter-spacing: 5px;
     display:flex;
     flex-wrap: wrap;
     column-gap: 20px;
+    justify-content: space-between;
   }
 
   .explore-span{
@@ -430,10 +432,12 @@ letter-spacing: 5px;
       flex-wrap: wrap;
       row-gap: 20px; 
       column-gap: 40px;
+      justify-content: space-between;
   }
   .buy-tickets-right{
     display: flex;
     flex-wrap: wrap;
+    
     /*row-gap: 20px; 
     column-gap: 40px;*/
     color: #ffffff;
@@ -704,7 +708,7 @@ letter-spacing: 5px;
     background-position: 50% 50%;
     color: white;
     transition: 1s;
-    border-width: 1px;
+    border-width: 2px;
     cursor: pointer;
   }
   .social-item:hover {
