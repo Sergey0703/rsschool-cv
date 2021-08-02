@@ -2,6 +2,32 @@ html{
     scroll-behavior: smooth; 
 }
 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
 .header{
     background-color: #000000;
     color: #ffffff;
@@ -38,6 +64,7 @@ html{
     column-gap: 10px;
     align-items: flex-end;
     text-decoration: none;
+    padding-top: 10px;
     
   }
   
@@ -46,8 +73,9 @@ html{
     width: 48px;
     height: 30px;
     background-size: contain;
-    background-position:top center;
+    /*background-position:bottom center;*/
     background-repeat: no-repeat;
+    padding-bottom: 3px;
     
    }
 
@@ -58,6 +86,7 @@ html{
     font-weight: 400;
     font-size: 32px;
     text-transform: uppercase; 
+    letter-spacing: 5px;
     padding-bottom: 0;
     
   }
@@ -67,18 +96,25 @@ html{
     filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
   }
 
+  .navigation{
+      display: flex;
+      flex: 1;
+      max-width: 720px;
+    }
 
 .header-list{
     display: flex;
-    flex-wrap: wrap;
+    flex: 1;
+    /*flex-wrap: wrap;*/
     max-width: 720px;
-    padding-left: 200px;
+    /*padding-left: 200px;*/
     font-family: Roboto;
-    align-items: center;
+    align-items: bottom;
+    justify-content: space-between;
 }
 
 .item-list{
-    padding-left: 20px;
+  /*  padding-left: 20px;*/
     font-size: 22px;
    
 }
@@ -130,9 +166,8 @@ letter-spacing: 5px;
    color:#ffffff;
    font-family: Forum;
     font-weight: 400;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    
+    padding-top: 50px;
+      
 }
 .welcome-text-head{
     font-family: Forum;
@@ -151,7 +186,6 @@ letter-spacing: 5px;
    /* border: none;*/
     outline: none;
     color: white;
-    padding-top: 26px;
     text-align: center;
     font-family: Roboto;
     font-weight: 300;
@@ -159,7 +193,8 @@ letter-spacing: 5px;
     display: inline-block;
     font-size: 22px;
     width: 360px;
-    height: 75px;
+    height: 50px;
+    padding-top: 25px;
     margin-top: 75px;
     border-radius: 10px;
   }
@@ -173,7 +208,7 @@ letter-spacing: 5px;
     font-weight: 400;
     font-size: 80px;  
     color: #9D8665;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     position: relative;
     text-transform: uppercase; 
 }
@@ -246,7 +281,7 @@ letter-spacing: 5px;
     font-weight: 400;
     font-size: 80px;  
     color: #ffffff;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
     position: relative;
     text-transform: uppercase; 
 }
@@ -414,7 +449,7 @@ letter-spacing: 5px;
     font-weight: 400;
     font-size: 80px;  
     color: #ffffff;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
     position: relative;
     text-transform: uppercase; 
 }
