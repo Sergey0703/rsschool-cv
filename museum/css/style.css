@@ -201,10 +201,9 @@ letter-spacing: 5px;
     text-decoration: none;
     padding-top: 50px;
    }
-   
- 
-  
-   .place-h4{
+
+     
+   .place-h3{
    font-family: Forum;
    font-weight: 400;
    font-size: 32px;  
@@ -214,14 +213,19 @@ letter-spacing: 5px;
    text-transform: uppercase; 
    }
     
-   .place-h4::after {
+   .visiting-places .place-h3::after {
     content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 75%;
+    transition: 1s;
+    right: 32%;
     height: 3px;
-    background-color: #710707; 
+    background-color: #710707;
+  }
+
+  .visiting-places a:hover>.place-h3::after{
+    right:0px;
   }
 
    .ptext{
@@ -403,6 +407,24 @@ letter-spacing: 5px;
     line-height: 1.5;
   } 
   /**************************************************************************/
+  .byu-tickets-text-head{
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;  
+    color: #ffffff;
+    margin-bottom: 100px;
+    position: relative;
+    text-transform: uppercase; 
+}
+.byu-tickets-text-head::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #710707; 
+  }
   .byu-tickets{
       display: flex;
       flex-wrap: wrap;
