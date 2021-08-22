@@ -26,7 +26,6 @@ if(direction==='up'){
         activeSlideIndex=0;
       }
 
-
 }else if(direction==='down'){
     activeSlideIndex--;
     if(activeSlideIndex<0){
