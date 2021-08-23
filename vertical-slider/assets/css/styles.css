@@ -103,3 +103,32 @@ button:focus {
 button:hover {
   color: black;
 }
+
+.audio-panel {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.audio-panel button {
+  font-size: 28px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  z-index: 100;
+  padding: 0px;
+  background-color: gray;
+  border-color: gray;
+  color: white;
+  padding-top: 0.5%;
+}
