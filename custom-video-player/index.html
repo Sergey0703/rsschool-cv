@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
     <title>Custom video player</title>
 </head>
 <body>
     
+    <section class="white" id="Video">
+        <div class="container flex">
+            <div class="vposter">
+                <video width="1440"  class="player__video viewer"  poster="/assets/img/vposter.jpg" src="/assets/video/652333414.mp4"></video>
+              <!-- <div class="btn-play">-->
+               <!--<button class="btn-play"></button> -->  
+
+               
+            </div>
+            <div class="vcontrols">
+                <button class="btn-rewind-prev btn-control"></button>
+                <button class="btn-play-small btn-control"></button>
+                <button class="btn-rewind-next btn-control"></button>
+                <div><input type=range min="0" max="100" value="50" class="progress"></div>
+                <button class="btn-volume btn-control"></button>
+                <div><input type=range min="0" max="100" value="50" class="progress-small"></div>
+                <button class="btn-fullscr btn-control"></button>
+            </div>
+
+      <!---
+        <div class=" video-title "> 
+          <div>
+            <h2 class="video-title-head letter-sp5">
+            Video journey
+            </h2>
+          </div>
+          <div class="video-title-text ">
+            Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+          </div>
+
+        </div>
+    -->
+    </div>
+    </section>
+<script src="assets/jscript/app.js"></script>
 </body>
 </html>
