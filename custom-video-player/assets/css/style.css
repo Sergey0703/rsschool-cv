@@ -16,6 +16,8 @@
      padding-top: 10px;
  }
 /*video**************************************************************************************/
+
+
 .vposter{
         
     display: flex;
@@ -26,8 +28,8 @@
 
 }
 
-.player__video{
-    width: 1440px;
+.player_video{
+    max-width: 1440px;
     /*height: 629px;*/
 }
 .btn-play{
@@ -38,6 +40,8 @@ cursor: pointer;
 background-color: unset;
 border-width: 0;
 }
+
+
 /*.btn-play:hover {
 color: #9D8665;
 } */
@@ -51,9 +55,24 @@ padding: 0 20px;
 background-color: #000000;
 }
 
+.video-container:-webkit-full-screen,
+.video-container:fullscreen {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+  }
+
+  .vcontrols:-webkit-full-screen,
+  .vcontrols:fullscreen {
+    position: absolute;
+    bottom: 0px;
+    background-color: green;
+  }
+
+
 .btn-control{
-width: 40px;
-height: 36px; 
+width: 35px;
+height: 30px; 
 cursor: pointer;
 background-position: center center;
 background-repeat: no-repeat;
@@ -70,14 +89,14 @@ height: 7px;
 width: 820px;
 outline: none;
 transition: background 450ms ease-in;
--webkit-appearance: none;
+/*-webkit-appearance: none;*/
 }
 
 .progress::-webkit-slider-thumb {
 width: 20px;
 height: 20px;
 border-radius: 50%;
--webkit-appearance: none;
+/*-webkit-appearance: none;*/
 cursor: ew-resize;
 background: #ffffff;
 }
@@ -90,14 +109,16 @@ height: 7px;
 width: 155px;
 outline: none;
 transition: background 450ms ease-in;
--webkit-appearance: none;
+/*-webkit-appearance: none;*/
 }
+
+
 
 .progress-small::-webkit-slider-thumb {
 width: 20px;
 height: 20px;
 border-radius: 50%;
--webkit-appearance: none;
+/*-webkit-appearance: none;*/
 cursor: ew-resize;
 background: #ffffff;
 }
@@ -108,8 +129,11 @@ background-image: url(/assets/img/btn-rewind-prev.svg);
 }
 
 .btn-play-small{
-background-image: url(/assets/img/btn-play-small.svg);
+background-image: url(/assets/img/btn-play-small.svg) ;
 }
+.pause{
+    background-image: url(/assets/img/pause.svg) ;
+  }
 
 .btn-rewind-next{
 background-image: url(/assets/img/btn-rewind-next.svg);
