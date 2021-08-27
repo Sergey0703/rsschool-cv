@@ -81,6 +81,10 @@ background-color: unset;
 border-width: 0;
 
 }
+.btn-control:hover {
+    filter: invert(57%) sepia(16%) saturate(740%) hue-rotate(356deg) brightness(91%) contrast(83%);
+  }
+
 .progress {
 background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%);
 border: solid 0px #24809E;
