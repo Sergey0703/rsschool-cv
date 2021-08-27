@@ -31,6 +31,11 @@ function playPause() {
     let volume = btnVolume.value ;
     
     video.volume = volume;
+    if(volume==0){
+        btnMute.classList.add('btn-mute');
+    }else{
+        btnMute.classList.remove('btn-mute');
+    }
   }
 
 
@@ -51,7 +56,7 @@ function playPause() {
     btnScale.value = Math.round(video.currentTime / video.duration * 100);
   }
   function muteChange(){
-      console.log('mute=',video.volume);
+      //console.log('mute=',video.volume);
     if(video.volume == 0) {
 
         video.volume = btnVolume.value;
