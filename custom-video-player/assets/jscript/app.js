@@ -55,11 +55,11 @@ function playPause() {
     if(video.volume == 0) {
 
         video.volume = btnVolume.value;
-        
+        btnMute.classList.remove('btn-mute');
        // muteButton.setAttribute('class','video-hud__element video-hud__mute video-hud__mute_false');
         
         } else {
-        
+        btnMute.classList.add('btn-mute');
         video.volume = 0;
         
         //muteButton.setAttribute('class','video-hud__element video-hud__mute video-hud__mute_true');
