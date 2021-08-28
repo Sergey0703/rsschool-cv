@@ -1,4 +1,6 @@
 const btnPlaySmall=document.querySelector('.btn-play-small');
+const btnNext=document.querySelector('.btn-rewind-next');
+const btnPrev=document.querySelector('.btn-rewind-prev');
 const btnMute=document.querySelector('.btn-volume');
 const btnVolume=document.querySelector('.progress-small');
 const btnScale=document.querySelector('.progress');
@@ -7,8 +9,9 @@ const btnFull=document.querySelector('.btn-fullscr')
 
 
 const video = document.querySelector('.viewer');
-const videoContainer=document.querySelector('.video-container');
-
+//const videoContainer=document.querySelector('.video-container');
+let videoScr=0;
+let videoArr=["/assets/video/video1.mp4","/assets/video/video2.mp4","/assets/video/video3.mp4"]
 
 
 
@@ -98,7 +101,53 @@ function playPause() {
   }
 
 
+  function nextVideo(){
+    console.log('prev=',videoScr);
+    let modeV=video.paused;
+    if(modeV === false){
+        // playPause();
+      video['pause']();
+      }
+     if (videoScr<videoArr.length-1){
+        videoScr++;
+      }else{
+        videoScr=0;  
+     }
+     video.src=videoArr[videoScr];
+     btnPlaySmall.classList.remove('pause');
+     if(modeV===false){
+     playPause();
+     }
+   console.log('Next',videoScr);
+  }
+
+  function prevVideo(){
+      console.log('prev=',videoScr);
+      let modeV=video.paused;
+    if(modeV === false){
+   // playPause();
+    video['pause']();
+    }
+   if (videoScr>=1){
+      videoScr--;
+    }else{
+      videoScr=videoArr.length-1;  
+   }
+   video.src=videoArr[videoScr];
+   btnPlaySmall.classList.remove('pause');
+   console.log('modeV=',modeV);
+   if(modeV===false){
+    playPause();
+    console.log('playPause');
+   }
+   
+ console.log('Next',videoScr);
+}
+
+
   btnPlaySmall.addEventListener('click',playPause);
+  btnNext.addEventListener('click',nextVideo);
+  btnPrev.addEventListener('click',prevVideo);
   btnVolume.addEventListener('change',volumeChange);
   btnScale.addEventListener('change',scaleChange);
   video.addEventListener('timeupdate', videoProgress);

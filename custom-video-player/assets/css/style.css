@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    
 }
  body{
      font-family: "Forum", sans-serif;
@@ -11,6 +12,7 @@
  }
 
  .container{
+    
      max-width: 80%;
      margin: 0 auto;
      padding-top: 10px;
@@ -32,6 +34,8 @@
 width: 100%;
 height: auto;
 }
+
+
 
 .video-container:-webkit-full-screen,
 .video-container:fullscreen {
