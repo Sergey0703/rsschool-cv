@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+ <title>exit_full_screen [#905]</title>
+ <desc>Created with Sketch.</desc>
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <g fill="none" fill-rule="evenodd" id="Page-1">
+   <g fill="#000000" id="Dribbble-Light-Preview" transform="translate(-260.000000, -4199.000000)">
+    <g id="icons" transform="translate(56.000000, 160.000000)">
+     <path d="m218,4047l6,0l0,-2l-6,0l0,-6l-2,0l0,4.959l0,3.041l2,0zm0,6l6,0l0,-2l-6,0l-2,0l0,0.959l0,7.041l2,0l0,-6zm-8,6l2,0l0,-7.041l0,-0.959l-2,0l-6,0l0,2l6,0l0,6zm0,-20l2,0l0,4.959l0,3.041l-2,0l-6,0l0,-2l6,0l0,-6z" fill="#b3b3b3" id="exit_full_screen-[#905]"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

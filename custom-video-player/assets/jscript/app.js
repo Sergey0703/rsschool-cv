@@ -40,20 +40,25 @@ function playPause() {
 
 
   function toggleFullScr() {
-    if (!document.videoContainer) {
+    console.log('tog');
+    if (!document.fullscreenElement) {
         videoContainer.requestFullscreen();
+        btnFull.classList.add('btn-exit');
+        console.log('add');
     } else {
       if (document.exitFullscreen) {
         document.exitFullscreen();
+        btnFull.classList.remove('btn-exit');
+        console.log('rem');
       }
     }
   }
   function scaleChange(){
-        video.currentTime = video.duration * (btnScale.value / 100);
+        video.currentTime = video.duration * (btnScale.value / 1000);
   }
 
   let videoProgress = () => {
-    btnScale.value = Math.round(video.currentTime / video.duration * 100);
+    btnScale.value = Math.round(video.currentTime / video.duration * 1000);
   }
   function muteChange(){
       //console.log('mute=',video.volume);
