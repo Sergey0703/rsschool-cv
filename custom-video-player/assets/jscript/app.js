@@ -66,16 +66,37 @@ function playPause() {
 
         video.volume = btnVolume.value;
         btnMute.classList.remove('btn-mute');
-       // muteButton.setAttribute('class','video-hud__element video-hud__mute video-hud__mute_false');
+     
         
         } else {
         btnMute.classList.add('btn-mute');
         video.volume = 0;
-        
-        //muteButton.setAttribute('class','video-hud__element video-hud__mute video-hud__mute_true');
-        
         }
   }
+
+  let keyPress = (evt) => {
+    evt.preventDefault()
+    if (evt.code === 'Space') playPause();
+    if (evt.code === 'KeyM') muteChange();
+    if (evt.code === 'KeyF') toggleFullScr();
+    
+    if (evt.code === 'ArrowRight') {
+      video.currentTime += 5;
+    };
+    if (evt.code === 'ArrowLeft') {
+      video.currentTime -= 5;
+    };
+   
+    
+    if (evt.key === 'P' || (evt.key === 'Shift' && evt.key === 'p')) {
+      togglePrevHandler();
+    };
+    if (evt.key === 'N' || (evt.key === 'Shift' && evt.key === 'n')) {
+      toggleNextHandler();
+    };
+    
+  }
+
 
   btnPlaySmall.addEventListener('click',playPause);
   btnVolume.addEventListener('change',volumeChange);
@@ -84,3 +105,4 @@ function playPause() {
   
   btnMute.addEventListener('click',muteChange);
   btnFull.addEventListener('click', toggleFullScr);
+  document.addEventListener('keydown', keyPress);
