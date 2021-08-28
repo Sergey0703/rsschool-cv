@@ -9,7 +9,7 @@ const btnFull=document.querySelector('.btn-fullscr')
 
 
 const video = document.querySelector('.viewer');
-//const videoContainer=document.querySelector('.video-container');
+const videoContainer=document.querySelector('.video-container');
 let videoScr=0;
 let videoArr=["/assets/video/video1.mp4","/assets/video/video2.mp4","/assets/video/video3.mp4"]
 
