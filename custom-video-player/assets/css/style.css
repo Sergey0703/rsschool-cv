@@ -95,14 +95,21 @@ transition: 0.5s;
 
 .btn-play_active {
     top: 30%;
-  }
+}
+
+
+.btn-play:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
 .btn-play-small{
   background-image: url(/assets/img/btn-play-smalll.svg) ;
  }
 
 .pause{
   background-image: url(/assets/img/pause.svg) ;
-      }
+}
 
 .progress {
 background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%);
