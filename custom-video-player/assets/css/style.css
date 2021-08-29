@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    
+   
 }
  body{
      font-family: "Forum", sans-serif;
@@ -18,7 +18,9 @@
      padding-top: 10px;
  }
 /*video**************************************************************************************/
-
+.hide {
+    display: none !important;
+}
 
 .video-container{
         
@@ -26,7 +28,7 @@
     justify-content: center;
     align-items:center;
     position: relative;
-    
+    overflow: hidden;
    /* background-image: url(/assets/img/vposter.jpg);*/
 
 }
@@ -53,10 +55,14 @@ height: auto;
     padding: 0 10px;
     background-color: #000000;
     position: absolute;
-    bottom: 0;
+    bottom: -1000px;
+    transition: 0.5s;
     
     }
     
+    .vcontrols_active {
+        bottom: 0;
+      }
     .btn-control{
         width: 35px;
         height: 30px; 

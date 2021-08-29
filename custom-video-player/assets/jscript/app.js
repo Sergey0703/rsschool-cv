@@ -1,3 +1,4 @@
+const vcontrols=document.querySelector('.vcontrols');
 const btnPlaySmall=document.querySelector('.btn-play-small');
 const btnNext=document.querySelector('.btn-rewind-next');
 const btnPrev=document.querySelector('.btn-rewind-prev');
@@ -59,10 +60,9 @@ function playPause() {
   let videoProgress = () => {
     btnScale.value = Math.round(video.currentTime / video.duration * MAX_DURATION);
     //console.log('btnScale.value=',btnScale.value)
-    if(btnScale.value==MAX_DURATION){
-        btnPlaySmall.classList.remove('pause');
-        //console.log('btnScale.value2=',btnScale.value)
-    }
+    //if(btnScale.value==MAX_DURATION){
+     //   btnPlaySmall.classList.remove('pause');
+     //}
   }
   function muteChange(){
       
@@ -74,6 +74,8 @@ function playPause() {
         video.volume = 0;
         }
   }
+
+
 
   let keyPress = (evt) => {
     evt.preventDefault()
@@ -87,7 +89,7 @@ function playPause() {
     if (evt.code === 'ArrowLeft') {
       video.currentTime -= 10;
     };
-   
+    //console.log();
     if (evt.key === 'P' || (evt.key === 'Shift' && evt.key === 'p')) {
       prevVideo();
     };
@@ -139,6 +141,23 @@ function playPause() {
   
  }
 
+ function videoEnd(){
+    btnPlaySmall.classList.remove('pause');
+ }
+
+ let onActive = () => {
+    vcontrols.classList.add('vcontrols_active');
+   // bigPlayBtn.classList.add('big-play_active');
+    videoContainer.removeEventListener('mousemove', onActive);
+    videoContainer.removeEventListener('touchmove', onActive);
+    setTimeout(offActive, 4000);
+  }
+  let offActive = () => {
+    vcontrols.classList.remove('vcontrols_active');
+   // bigPlayBtn.classList.remove('big-play_active');
+    videoContainer.addEventListener('mousemove', onActive);
+    videoContainer.addEventListener('touchmove', onActive);
+  }
 
   btnPlaySmall.addEventListener('click',playPause);
   btnNext.addEventListener('click',nextVideo);
@@ -146,7 +165,10 @@ function playPause() {
   btnVolume.addEventListener('change',volumeChange);
   btnScale.addEventListener('change',scaleChange);
   video.addEventListener('timeupdate', videoProgress);
+  video.addEventListener('ended', videoEnd);
   
   btnMute.addEventListener('click',muteChange);
   btnFull.addEventListener('click', toggleFullScr);
   document.addEventListener('keydown', keyPress);
+  videoContainer.addEventListener('mousemove', onActive);
+  videoContainer.addEventListener('touchmove', onActive);
