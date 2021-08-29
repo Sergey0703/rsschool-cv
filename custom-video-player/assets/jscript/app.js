@@ -6,6 +6,8 @@ const btnMute=document.querySelector('.btn-volume');
 const btnVolume=document.querySelector('.progress-small');
 const btnScale=document.querySelector('.progress');
 const btnFull=document.querySelector('.btn-fullscr');
+const btnPlay=document.querySelector('.btn-play');
+
 const MAX_DURATION=1000;
 
 const video = document.querySelector('.viewer');
@@ -20,12 +22,29 @@ function playPause() {
     video[method]();
     if (method === 'play') {
         btnPlaySmall.classList.add('pause');
+        btnPlay.classList.remove('btn-play_active');
+      }
+      if (method === 'pause') {
+        btnPlaySmall.classList.remove('pause');
+        btnPlay.classList.add('btn-play_active');
+      }
+  }
+
+  function playBig() {
+   /* const method = video.paused ? 'play' : 'pause';
+    video[method]();
+    if (method === 'play') {
+        btnPlaySmall.classList.add('pause');
       }
       if (method === 'pause') {
         btnPlaySmall.classList.remove('pause');
       }
+      */
+      btnPlaySmall.classList.add('pause');
+      btnPlay.classList.remove('btn-play_active');
+      video['play']();
+      
   }
-
   
   function volumeChange(){
     let volume = btnVolume.value ;
@@ -147,19 +166,24 @@ function playPause() {
 
  let onActive = () => {
     vcontrols.classList.add('vcontrols_active');
-   // bigPlayBtn.classList.add('big-play_active');
+    if(video.paused===true){
+    btnPlay.classList.add('btn-play_active');
+    }
     videoContainer.removeEventListener('mousemove', onActive);
     videoContainer.removeEventListener('touchmove', onActive);
-    setTimeout(offActive, 4000);
+    setTimeout(offActive, 3000);
   }
   let offActive = () => {
     vcontrols.classList.remove('vcontrols_active');
-   // bigPlayBtn.classList.remove('big-play_active');
+
+    btnPlay.classList.remove('btn-play_active');
+
     videoContainer.addEventListener('mousemove', onActive);
     videoContainer.addEventListener('touchmove', onActive);
   }
 
   btnPlaySmall.addEventListener('click',playPause);
+  btnPlay.addEventListener('click',playBig);
   btnNext.addEventListener('click',nextVideo);
   btnPrev.addEventListener('click',prevVideo);
   btnVolume.addEventListener('change',volumeChange);
