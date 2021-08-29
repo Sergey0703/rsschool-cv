@@ -182,6 +182,18 @@ function playPause() {
     videoContainer.addEventListener('touchmove', onActive);
   }
 
+   
+  document.onfullscreenchange = _ => {
+    
+    if (document.fullscreenElement) {
+        btnFull.classList.add('btn-exit');
+    } else {
+        btnFull.classList.remove('btn-exit');
+    }
+    
+   
+}
+
   btnPlaySmall.addEventListener('click',playPause);
   btnPlay.addEventListener('click',playBig);
   btnNext.addEventListener('click',nextVideo);
@@ -196,3 +208,4 @@ function playPause() {
   document.addEventListener('keydown', keyPress);
   videoContainer.addEventListener('mousemove', onActive);
   videoContainer.addEventListener('touchmove', onActive);
+  //window.addEventListener('onfullscreenchange',onfullscreenchange);
