@@ -18,6 +18,20 @@
 * **GIT**    
 * **JavaScript** - learning 
 
+## *Code example:*
+
+Complementary DNA KATA from CODEWARS: 
+
+function DNAStrand(dna){
+  let symbol, answer="";
+  let dna_map={'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
+  for(let i=0; i < dna.length; i++){
+    symbol=dna_map[dna[i]];
+    answer=answer+symbol;
+  }
+  return answer;
+}
+
 
 
 ## *Education:*
