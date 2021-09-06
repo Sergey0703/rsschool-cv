@@ -21,7 +21,7 @@
 ## *Code example:*
 
 Complementary DNA KATA from CODEWARS: 
-
+```javascript
 function DNAStrand(dna){
   let symbol, answer="";
   let dna_map={'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
@@ -31,7 +31,7 @@ function DNAStrand(dna){
   }
   return answer;
 }
-
+```
 
 
 ## *Education:*
