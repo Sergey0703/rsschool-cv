@@ -1,17 +1,38 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
 body{
-    background-color: #f7f7ff;
+    width: 1440px;
+    background-color: #f4ece6;
+  /*  background-color: #ffe4b6; */
+  /* #ffe073 */
 }
 .main-class{
     width: 700px;
     margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+.short_info{
+    /*box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;*/
+   /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+   box-shadow:
+-15px -15px 2px -5px rgba(123,51,90,.5),
+-15px 15px 2px -5px rgba(60,74,123,.5),
+15px -15px 2px -5px rgba(255,0,0,.5),
+15px 15px 2px -5px rgba(60,123,68,.5);
+transition: box-shadow 0.3s ease-in-out;
 
+}
 .section-prof{
 display: flex;
 min-height: 400px;
 }
 .left-side{
-    background-color: #0487cc;
+    background-color: #e6dace;
     color: #fff;
     width: 300px;
     padding: 10px 0 0 10px;
