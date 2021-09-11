@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrapper">    
 <header class="header">
 <nav class="navigation">
     <ul class="header-list">
@@ -34,17 +35,18 @@
 </nav>
 
 </header>
-<main class="main-class">
-<section class="section-prof">
 
-<div class="left-side">
+<main class="main-class">
+
+
+<section class="left-side">
     <div class="short_info">
     <div  class="title">
         <img src="cat.jpg" class="ava" alt="my photo">
      </div>
      <div class="mycontacts"  >
-      <div class="fio">  BALIASNYI SERGHII </div>
-      <div class="prof">backend & frontend developer</div> 
+      <H1 class="fio">  BALIASNYI SERGHII 
+      <div class="prof">backend & frontend developer</div></H1> 
      <div class="underline"></div>
     <ul class="ul_contacts">
         <li><a href=https://t.me/sergey0703><div><i class="fab fa-telegram"></i></div><div> t.me/Sergey0703 </div></a></li>
@@ -55,8 +57,11 @@
      </div>
     </div>
 <div class="shortref">    
+   
 <ul>
-    <li class="item">Skills:
+    <li class="item"><span class="gradient"> SKILLS: </span>
+        <hr class="hr-horizontal-gradient">
+       
     <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -65,6 +70,7 @@
         <li>JScript</li>
     </ul>
     </li>
+    <!--
     <li class="item">Hobbies:
     <ul>
          <li>Movies</li>
@@ -74,16 +80,17 @@
 
     </ul>
     </li>
+   -->
 </ul>
 </div>
-</div>
+</section>
 
-<div class="right-side">
-   <div class="hi">HI, I'M <span class="hytext"> BALIASNYI SERGHII </span></div>
-   <div class="prof">backend & frontend developer</div> 
+<section class="right-side">
+   <div class="item"><span class="gradient"> SUMMARY: </span></div>
+  <!-- I’m a junior bakend & frontend developer. I want to upgrade my skills. -->
    <div class="info">
 
-    <h4>Information about me:</h4>
+    <h4 ><span class="gradient"></span>>Information about me:</h4>
     Now I am programming accounting programs and ERP systems
     I have experience in administering Microsoft, Unix and Linux servers
     Recently I have been studying frontend development
@@ -105,19 +112,14 @@
    </div>
 
 
-
-
-
-</div>
-
-
 </section>
+
+
 <footer class="foot">
     <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width=50></a> 
 </footer>
-
 </main>
    
-    
+  
 </body>
 </html>
