@@ -4,56 +4,191 @@
     box-sizing: border-box;
     border: 0;
 }
+html{
+    scroll-behavior: smooth; 
+}
 
 body{
-    width: 1440px;
+   /* max-width: 1440px; */
     background-color: #f4ece6;
+    color:rgba(123,51,90,1);
+   
   /*  background-color: #ffe4b6; */
   /* #ffe073 */
 }
+
+ol, ul {
+	list-style: none;
+}
+.fas, .fab{ 
+font-size: 2rem;
+color: #000000;
+padding-right: 10px;
+}
+
+.header{
+    background-color: #fff;
+}
+
+.header-list{
+    display: flex;
+    flex: 1;
+    /*flex-wrap: wrap;*/
+  /*  max-width: 720px; */
+    /*padding-left: 200px;*/
+    font-family: Roboto;
+    align-items: bottom;
+    justify-content: space-between;
+    padding: 3em 2em;
+}
+
+.item-list{
+    /*  padding-left: 20px;*/
+      font-size: 1em;
+    /*  border: 2px solid; 
+      box-shadow: 10px; */
+     
+     /*   box-shadow: 0 1px 1px 0 #C7C7C7 inset;
+        background: none repeat scroll 0 0 #E9E9E9;
+        */
+
+        
+
+box-shadow:
+-15px -15px 2px -7px rgba(123,51,90,.5),
+-15px 15px 2px -7px rgba(60,74,123,.5),
+15px -15px 2px -7px rgba(255,0,0,.5),
+15px 15px 2px -7px rgba(60,123,68,.5);
+    
+  }
+  
+  .item-list a{
+      text-decoration: none;
+      color: #9D8665;
+     /* color: #AE562A; */
+      font-family: Roboto;
+      font-weight: 500;
+      text-transform: uppercase; 
+  }
+  .item-list a:hover {
+     
+      color: #AE562A;
+    }
+  
+    .item-list a:active {
+      
+      color: #AE562A;
+    }
+
 .main-class{
     width: 700px;
     margin: 0 auto;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 3em 0;
+  /*  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 }
 .short_info{
     /*box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;*/
    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+   text-align: left;
    box-shadow:
 -15px -15px 2px -5px rgba(123,51,90,.5),
 -15px 15px 2px -5px rgba(60,74,123,.5),
 15px -15px 2px -5px rgba(255,0,0,.5),
 15px 15px 2px -5px rgba(60,123,68,.5);
-transition: box-shadow 0.3s ease-in-out;
+
 
 }
 .section-prof{
 display: flex;
 min-height: 400px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .left-side{
     background-color: #e6dace;
-    color: #fff;
-    width: 300px;
-    padding: 10px 0 0 10px;
+    width: 320px;
+    padding: 10px 10px 0 10px;
     font-size: 18px;
+}  
+.title{
+
+    padding: 1em 0;
 }
 
-  .round {
-    width: 110px; height: 110px; /* Ширина и высота */
+.ava{
+    width: 200px;
+    height: 200px; /* Ширина и высота */
     border-radius: 50%; /* Превращаем в круг */
-    background: url(cat.jpg) no-repeat 0px 0px; /* Параметры фона */
-    background-size: auto 110px; /* Высота фотографии равна высоте элемента */
-    
+        
     display: block; 
     margin: 0 auto;
-    
-   }
+    padding: 10px 10px;
+}
+.mycontacts{
+    padding: 1em 1em 0 1em;
+}
 
+     
+     
+.underline{
+    width: 100%;
+    height: .1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(123,51,90,.5);
+}
+.fio{
+    text-align: center;
+     /* font-family: Roboto; */
+    font-weight: 900; 
+}
+
+.ul_contacts{
+    margin: 0px 0px;
+    padding: 0;
+}
+ 
+
+.ul_contacts li {
+    
+   /* display: flex; 
+    flex-direction: row;
+    justify-content: flex-start; 
+    margin: 0px 0px;
+    */
+    /*align-items: center; */
+    /*text-align: left; */
+    line-height: 1.8; /* Межстрочное расстояние */
+}
+
+.ul_contacts li div{
+margin: 0px;
+}
+
+.ul_contacts li a{
+   /* margin: 0px; */
+   display: flex; 
+   flex-direction: row;
+   justify-content: flex-start; 
+   margin: 0px 0px;
+ 
+    text-decoration: none;
+    color: rgba(123,51,90,1)
+   /* color: #9D8665; */
+   /* color: #AE562A; */
+   /* font-family: Roboto; */
+   /* font-weight: 100; */
+   /* text-transform: uppercase; */
+
+}
+.ul_contacts li a:hover {
+     
+    color: #AE562A;
+  }
 .shortref{
     padding: 10px 0 0 0; 
 }
   
+/*
 .left-side ul{
     padding-left: 0;
     padding-bottom: 20px;
@@ -62,7 +197,7 @@ min-height: 400px;
     list-style: none;
       
   }
-
+*/
   .item{
       font-size: 16px;
       font-weight: bold;
@@ -81,14 +216,15 @@ min-height: 400px;
 }
 
 .hytext{
-    color: #0487cc;
+   /* color: #0487cc; */
+    color: #D1704A;
     font-weight: bold;  
 }
 .prof{
     text-align: center; 
     margin-left: auto;
     margin-right: auto;  
-    margin: 10px 0 40px 0; 
+    /*margin: 10px 0 40px 0; */
     color: #757575;
 }
 .info{
