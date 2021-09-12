@@ -50,14 +50,14 @@ padding-right: 10px;
     flex: 1;
     flex-wrap: wrap;
     max-width: 720px; 
-    min-height: 170px;
+   
     /*padding-left: 200px;*/
    
     align-items: bottom;
     justify-content: space-between;
     align-content: space-between;
     font-family: Roboto;
-    padding: 3em 2em;
+    padding: 2em 2em ;
 }
 
 .item-list{
@@ -294,13 +294,21 @@ margin: 0px;
 @media (min-width: 320px) {
     .main-class{
         max-width: 320px; 
+        padding: 0;
     }
+    .header-list{
+        min-height: 170px;
+    }   
     
 }
 
 @media (min-width: 1440px){
     .main-class{
         max-width: 700px;
+        padding: 3em 0;
     }
+    .header-list{
+        min-height: 100px;
+    } 
 }
 
