@@ -12,20 +12,19 @@ body{
    /* max-width: 1440px; */
     background-color: #f4ece6;
     color: #000;
-   
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   /*  background-color: #ffe4b6; */
   /* #ffe073 */
 }
 
 
-.wrapper {
-   /* max-width: 1440px;*/
-    margin: 0 auto;
-}
 
 ol, ul {
 	list-style: none;
 }
+
 .fas, .fab{ 
 font-size: 2rem;
 color: #AE562A;
@@ -33,11 +32,12 @@ padding-right: 10px;
 }
 
 .gradient {
-	color: transparent;    
+	/*color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image: linear-gradient(90deg, red, orange, fuchsia);
+	background-image: linear-gradient(90deg, red, orange, fuchsia); */
     font-size: 1em;
+    text-transform: uppercase; 
     color:#AE562A;
 }
 
@@ -48,32 +48,26 @@ padding-right: 10px;
 .header-list{
     display: flex;
     flex: 1;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     max-width: 720px; 
+    min-height: 170px;
     /*padding-left: 200px;*/
-    font-family: Roboto;
+   
     align-items: bottom;
     justify-content: space-between;
+    align-content: space-between;
+    font-family: Roboto;
     padding: 3em 2em;
 }
 
 .item-list{
-    /*  padding-left: 20px;*/
-      font-size: 1em;
-    /*  border: 2px solid; 
-      box-shadow: 10px; */
-     
-     /*   box-shadow: 0 1px 1px 0 #C7C7C7 inset;
-        background: none repeat scroll 0 0 #E9E9E9;
-        */
-
-        
-
-box-shadow:
--15px -15px 2px -7px rgba(123,51,90,.5),
--15px 15px 2px -7px rgba(60,74,123,.5),
-15px -15px 2px -7px rgba(255,0,0,.5),
-15px 15px 2px -7px rgba(60,123,68,.5);
+  padding-left: 2px;
+  font-size: 1em;
+  box-shadow:
+  -15px -15px 2px -7px rgba(123,51,90,.5),
+  -15px 15px 2px -7px rgba(60,74,123,.5),
+  15px -15px 2px -7px rgba(255,0,0,.5),
+  15px 15px 2px -7px rgba(60,123,68,.5);
     
   }
   
@@ -132,13 +126,7 @@ box-shadow:
 
 
 }
-/*
-.section-prof{
-display: flex;
-min-height: 400px;
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-*/
+
 hr {
     height: 30px;
     border-style: solid;
@@ -296,6 +284,9 @@ margin: 0px;
     margin: 10px 0 30px 0; 
 }
 
+.experience{
+    margin: 10px 0 30px 0; 
+}
 .languages{
     margin: 10px 0 30px 0; 
 }

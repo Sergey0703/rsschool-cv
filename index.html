@@ -15,21 +15,21 @@
 <nav class="navigation">
     <ul class="header-list">
         <li class="item-list">
-            <a href="#aboutme">About me</a>
+            <a href="#Info">About me</a>
        </li>
         <li class="item-list">
-             <a href="#skills">Skills</a>
+             <a href="#Skills">Skills</a>
         </li>
         <li class="item-list">
-            <a href="#education">Education</a>
+            <a href="#Education">Education</a>
         </li>
 
         <li class="item-list">
-            <a href="#expirience">Experience</a>
+            <a href="#Experience">Experience</a>
         </li>
         
         <li class="item-list">
-            <a href="#languages">Languages</a>
+            <a href="#Languages">Languages</a>
         </li>
     </ul>
 </nav>
@@ -56,7 +56,7 @@
     </ul>
      </div>
     </div>
-<div class="shortref">    
+<div class="shortref" id="Skills">    
    
 <ul>
     <li class="item"><span class="gradient"> SKILLS: </span>
@@ -70,43 +70,70 @@
         <li>JScript</li>
     </ul>
     </li>
-    <!--
-    <li class="item">Hobbies:
-    <ul>
-         <li>Movies</li>
-         <li>Theatre</li>
-         <li>Travel</li>
-
-
-    </ul>
-    </li>
-   -->
+    
 </ul>
 </div>
 </section>
 
 <section class="right-side">
-   <div class="item"><span class="gradient"> SUMMARY: </span></div>
-  <!-- I’m a junior bakend & frontend developer. I want to upgrade my skills. -->
-   <div class="info">
-
-    <h4 ><span class="gradient"></span>>Information about me:</h4>
-    Now I am programming accounting programs and ERP systems
-    I have experience in administering Microsoft, Unix and Linux servers
-    Recently I have been studying frontend development
-   </div>
-
-   <div class="education"> 
-    <h4>Education:</h4>
-    1990—1995 Sevastopol State University - higher education in microelectronics
-    2009- 2011 Kherson State University -higher education in economix
    
+   <div class="info" id="Info">
+
+    <h4 ><span class="gradient">Information about me:</span></h4>
+    <hr class="hr-horizontal-gradient">
+    Now I am programming accounting programs and ERP systems.
+    I have experience in administering Microsoft, Unix and Linux servers.
+    Recently I have been studying frontend development.
    </div>
-   <div class="languages">
-    <h4>Languages:</h4>
+
+   <div class="education" id="Education"> 
+    <h4><span class="gradient">Education:</span></h4>
+    <hr class="hr-horizontal-gradient">
     <ul>
-  <li>English: pre-intermediate (B1) </li>
-    <li>Russian</li>
+    <li>1990—1995 Sevastopol State University - higher education in microelectronics</li>
+    <li>2009- 2011 Kherson State University -higher education in economix</li>
+    </ul>
+   </div>
+
+   <div class="experience" id="Experience"> 
+    <h4><span class="gradient">Experience:</span></h4>
+    <hr class="hr-horizontal-gradient">
+    <ul>
+    <li>1995—1997 Engineer of the department of computer service</li>
+    <li>1997-1999 PHP programmer & technical support engineer</li>
+    <li>1999-2021 Head of technical support department </li>
+    </ul>
+   </div>
+
+    <div class="example"> 
+    <h4><span class="gradient"> Example of My Code:</span></h4>
+    <hr class="hr-horizontal-gradient">
+    Complementary kata from CODEWARS: 
+    <pre>
+
+function DNAStrand(dna){
+let symbol, answer="";
+
+let dna_map={'A': 'T', 'T': 'A',
+'G': 'C', 'C': 'G'};
+
+for(let i=0; i < dna.length; i++){
+   symbol=dna_map[dna[i]];
+    answer=answer+symbol;
+}
+return answer;
+}
+   </pre>
+   </div>
+
+
+
+   <div class="languages" id="Languages">
+    <h4><span class="gradient">Languages:</span></h4>
+    <hr class="hr-horizontal-gradient">
+    <ul>
+    <li>English: pre-intermediate (B1) </li>
+    <li>Russian  (native)</li>
     <li>Ukranian</li>
     </ul>
    </div>
