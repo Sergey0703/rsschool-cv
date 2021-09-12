@@ -225,16 +225,7 @@ margin: 0px;
     color:black;
 }
   
-/*
-.left-side ul{
-    padding-left: 0;
-    padding-bottom: 20px;
-  }
-.left-side ul li {
-    list-style: none;
-      
-  }
-*/
+
 
 .hr-horizontal-gradient {
 	margin: 5px 0;
@@ -300,7 +291,10 @@ margin: 0px;
     .header-list{
         min-height: 170px;
     }   
-    
+    .right-side{
+        /* background-color: #fff; */
+         max-width: 320px;
+     }
 }
 
 @media (min-width: 1440px){
