@@ -50,9 +50,6 @@ padding-right: 10px;
     flex: 1;
     flex-wrap: wrap;
     max-width: 720px; 
-   
-    /*padding-left: 200px;*/
-   
     align-items: bottom;
     justify-content: space-between;
     align-content: space-between;
@@ -106,13 +103,7 @@ padding-right: 10px;
         50% {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
       }
 
-      @keyframes mymove2 {
-        50% {box-shadow: -15px -15px 0px -1px rgba(123,51,90,.5),
-            -15px 15px 0px -1px rgba(60,74,123,.5),
-            15px -15px 0px -1px rgba(255,0,0,.5),
-            15px 15px 0px -1px rgba(60,123,68,.5);}
-      }
-
+    
 .short_info{
     /*box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;*/
    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
@@ -142,8 +133,8 @@ hr {
     padding: 10px 10px 0 10px;
     font-size: 18px;
 }  
-.title{
 
+.title{
     padding: 1em 0;
 }
 
@@ -151,7 +142,6 @@ hr {
     width: 280px;
     height: 280px; /* Ширина и высота */
     border-radius: 50%; /* Превращаем в круг */
-        
     display: block; 
     margin: 0 auto;
     padding: 10px 10px;
@@ -184,19 +174,11 @@ hr {
  
 
 .ul_contacts li {
-    
-   /* display: flex; 
-    flex-direction: row;
-    justify-content: flex-start; 
-    margin: 0px 0px;
-    */
-    /*align-items: center; */
-    /*text-align: left; */
-    line-height: 1.8; /* Межстрочное расстояние */
+  line-height: 1.8; /* Межстрочное расстояние */
 }
 
 .ul_contacts li div{
-margin: 0px;
+  margin: 0px;
 }
 
 .ul_contacts li a{
@@ -205,17 +187,10 @@ margin: 0px;
    flex-direction: row;
    justify-content: flex-start; 
    margin: 0px 0px;
- 
-    text-decoration: none;
-    color:black;
+   text-decoration: none;
+   color:black;
     
-   /* color: #9D8665; */
-   /* color: #AE562A; */
-   /* font-family: Roboto; */
-   /* font-weight: 100; */
-   /* text-transform: uppercase; */
-
-}
+  }
 .ul_contacts li a:hover {
      
     color: #AE562A;
@@ -281,6 +256,19 @@ margin: 0px;
 }
 .languages{
     margin: 10px 0 30px 0; 
+}
+
+.foot{
+    max-width: 700px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+   }
+
+.fa-github{
+    color:black;
+
 }
 
 @media (min-width: 320px) {
