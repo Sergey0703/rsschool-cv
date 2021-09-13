@@ -299,6 +299,20 @@ padding-right: 10px;
      }
 }
 
+@media (min-width: 700px) {
+    .main-class{
+        max-width: 700px; 
+        padding: 0;
+    }
+    .header-list{
+        min-height: 170px;
+    }   
+    .right-side{
+        /* background-color: #fff; */
+         max-width: 320px;
+     }
+}
+
 @media (min-width: 1440px){
     .main-class{
         max-width: 700px;
