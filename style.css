@@ -302,10 +302,10 @@ padding-right: 10px;
 @media (min-width: 700px) {
     .main-class{
         max-width: 700px; 
-        padding: 0;
+        padding: 1em 0 0 0;
     }
     .header-list{
-        min-height: 170px;
+        min-height: 100px;
     }   
     .right-side{
         /* background-color: #fff; */
