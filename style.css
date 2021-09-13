@@ -217,7 +217,7 @@ padding-right: 10px;
   .ul_skills li::before{
     content: "";
     position: absolute;
-    left: -5px;
+    left: -2px;
     top: calc(50% - 3px);
     display: block;
     height: 6px;
