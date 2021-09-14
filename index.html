@@ -8,7 +8,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.svg">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -51,7 +51,7 @@
 <section class="left-side">
     <div class="short_info">
     <div  class="title">
-        <img src="cat.jpg" class="ava" alt="my photo">
+        <img src="images/cat.jpg" class="ava" alt="my photo">
      </div>
      <div class="mycontacts"  >
       <H1 class="fio">  BALIASNYI SERGHII 
@@ -126,9 +126,9 @@
     <h4><span class="gradient">Projects:</span></h4>
     <hr class="hr-horizontal-gradient">
     <ul>
-    <li>1995—1997 Engineer of the department of computer service</li>
-    <li>1997-1999 PHP programmer & technical support engineer</li>
-    <li>1999-2021 Head of technical support department </li>
+    <li><a href="https://sergey0703-custom-video-player.netlify.app/" target="_blank">Custom video player</a> </li>
+    <li><a href="https://dreamy-jones-401249.netlify.app/" target="_blank">Landing page</a></li>
+    <li><a href="https://romantic-wiles-4ecf90.netlify.app/" target="_blank">Slider with sound</a> </li>
     </ul>
    </div>
 
@@ -140,10 +140,10 @@
 function DNAStrand(dna){
 let symbol, answer="";
 
-let dna_map={'A': 'T', 'T': 'A',
-'G': 'C', 'C': 'G'};
+let dna_map={'A': 'T', 
+'T': 'A','G': 'C', 'C': 'G'};
 
-for(let i=0; i&lt;dna.length; i++){
+for(let i=0;i&lt;dna.length;i++){
    symbol=dna_map[dna[i]];
     answer=answer+symbol;
 }
