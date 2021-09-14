@@ -8,16 +8,24 @@ html{
     scroll-behavior: smooth; 
 }
 
+:root {
+    --background-color: #f4ece6;
+    --main-color: #e6dace;
+    --text-color: #000;
+    --bright-color: #AE562A;
+    --dim-color: #9D8665; 
+    --white-color: #ffffff;
+   
+  }
+
 body{
    /* max-width: 1440px; */
-    background-color: #f4ece6;
-    color: #000;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
  }
-
-
 
 ol, ul {
 	list-style: none;
@@ -25,7 +33,7 @@ ol, ul {
 
 .fas, .fab{ 
 font-size: 2rem;
-color: #AE562A;
+color: var(--bright-color);
 padding-right: 10px;
 }
 
@@ -33,11 +41,11 @@ padding-right: 10px;
 	/*background-image: linear-gradient(90deg, red, orange, fuchsia); */
     font-size: 1em;
     text-transform: uppercase; 
-    color:#AE562A;
+    color: var(--bright-color);
 }
 
 .header{
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .header-list{
@@ -48,7 +56,6 @@ padding-right: 10px;
     align-items: bottom;
     justify-content: space-between;
     align-content: space-between;
-    font-family: Roboto;
     padding: 2em 2em ;
 }
 
@@ -63,40 +70,36 @@ padding-right: 10px;
     
   }
   
-  .item-list a{
-      text-decoration: none;
-      color: #9D8665;
+.item-list a{
+    text-decoration: none;
+    color: var(--dim-color);
      /* color: #AE562A; */
-      font-family: Roboto;
-      font-weight: 500;
-      text-transform: uppercase; 
-  }
-  .item-list a:hover {
-     
-      color: #AE562A;
-    }
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+.item-list a:hover {
+    color: var(--bright-color);
+}
   
-    .item-list a:active {
-      
-      color: #AE562A;
-    }
+.item-list a:active {
+   color: var(--bright-color);
+}
 
-
-    .main-class{
-        max-width: 700px; 
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        padding: 3em 0;
-        background-color: #e6dace;
+.main-class{
+    max-width: 700px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 3em 0;
+    background-color: var(--main-color);
       /*  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
       /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
-      animation: mymove 10s infinite;
+     animation: mymove 10s infinite;
     }
 
-    @keyframes mymove {
-        50% {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
-      }
+ @keyframes mymove {
+   50% {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  }
 
     
 .short_info{
@@ -107,8 +110,6 @@ box-shadow:
 -15px 15px 2px -5px rgba(60,74,123,.5),
 15px -15px 2px -5px rgba(255,0,0,.5),
 15px 15px 2px -5px rgba(60,123,68,.5);
-
-
 }
 
 
@@ -134,8 +135,7 @@ box-shadow:
 .mycontacts{
     padding: 1em 0.5em 0 0.5em; 
 }
-
-     
+    
      
 .underline{
     width: 100%;
@@ -147,8 +147,7 @@ box-shadow:
 }
 .fio{
     text-align: center;
-     /* font-family: Roboto; */
-    font-weight: 800; 
+    font-weight: 600; 
     color:#AE562A;
 }
 
@@ -177,9 +176,9 @@ box-shadow:
    font-weight: 600;
     
   }
+
 .ul_contacts li a:hover {
-     
-    color: #AE562A;
+      color: #AE562A;
   }
 .shortref{
     margin: 2em 0 0 0; 
@@ -187,8 +186,6 @@ box-shadow:
     font-weight: 700;
 }
   
-
-
 .hr-horizontal-gradient {
 	margin: 5px 0;
 	padding: 0;
@@ -197,11 +194,11 @@ box-shadow:
     background: linear-gradient(45deg, #AE562A , #ddd);
 }
 
-  .ul_skills li{
-      position: relative;
-      padding-left: 10px;
-  }
-  .ul_skills li::before{
+.ul_skills li{
+    position: relative;
+    padding-left: 10px;
+}
+.ul_skills li::before{
     content: "";
     position: absolute;
     left: -2px;
@@ -240,8 +237,9 @@ box-shadow:
     color: rgba(123,51,90,.8);
     display: block; 
 }
+
 .info{
-       margin: 10px 0 30px 0; 
+    margin: 10px 0 30px 0; 
 }
 
 .education{
@@ -253,15 +251,15 @@ box-shadow:
 }
 .projects{
     margin: 10px 0 30px 0; 
-  
-}
+ }
+
 .projects a{
     text-decoration: none;
     color: rgba(123,51,90,1);
     font-weight: 600;
 }
+
 .projects a:hover {
-     
     color: #AE562A;
   }
 
