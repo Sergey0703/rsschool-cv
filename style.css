@@ -15,9 +15,7 @@ body{
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-  /*  background-color: #ffe4b6; */
-  /* #ffe073 */
-}
+ }
 
 
 
@@ -32,10 +30,7 @@ padding-right: 10px;
 }
 
 .gradient {
-	/*color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: linear-gradient(90deg, red, orange, fuchsia); */
+	/*background-image: linear-gradient(90deg, red, orange, fuchsia); */
     font-size: 1em;
     text-transform: uppercase; 
     color:#AE562A;
@@ -105,11 +100,9 @@ padding-right: 10px;
 
     
 .short_info{
-    /*box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;*/
-   /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
-   text-align: left;
+text-align: left;
   /* animation: mymove2 10s infinite;*/
-   box-shadow:
+box-shadow:
 -15px -15px 2px -5px rgba(123,51,90,.5),
 -15px 15px 2px -5px rgba(60,74,123,.5),
 15px -15px 2px -5px rgba(255,0,0,.5),
@@ -180,7 +173,8 @@ padding-right: 10px;
    justify-content: flex-start; 
    margin: 0px 0px;
    text-decoration: none;
-   color:black;
+   color: rgba(123,51,90,1);
+   font-weight: 600;
     
   }
 .ul_contacts li a:hover {
@@ -203,13 +197,6 @@ padding-right: 10px;
     background: linear-gradient(45deg, #AE562A , #ddd);
 }
 
-/*
-  .item{
-      font-size: 1em;
-      font-weight: bold;
-      
-  }
-*/
   .ul_skills li{
       position: relative;
       padding-left: 10px;
@@ -270,8 +257,13 @@ padding-right: 10px;
 }
 .projects a{
     text-decoration: none;
+    color: rgba(123,51,90,1);
+    font-weight: 600;
 }
-
+.projects a:hover {
+     
+    color: #AE562A;
+  }
 
 .languages{
     margin: 10px 0 30px 0; 
