@@ -15,6 +15,7 @@ html{
     --bright-color: #AE562A;
     --dim-color: #9D8665; 
     --white-color: #ffffff;
+    --add-color: rgba(123,51,90,1)
    
   }
 
@@ -114,7 +115,7 @@ box-shadow:
 
 
 .left-side{
-    background-color: #e6dace;
+    background-color: var(--main-color);
     width: 320px;
     padding: 10px 10px 0 10px;
     font-size: 18px;
@@ -142,13 +143,13 @@ box-shadow:
     height: .1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    background-color: rgba(123,51,90,.5);
+    background-color: var(--add-color);
     
 }
 .fio{
     text-align: center;
     font-weight: 600; 
-    color:#AE562A;
+    color: var(--bright-color);
 }
 
 .ul_contacts{
@@ -172,13 +173,13 @@ box-shadow:
    justify-content: flex-start; 
    margin: 0px 0px;
    text-decoration: none;
-   color: rgba(123,51,90,1);
+   color: var(--add-color);
    font-weight: 600;
     
   }
 
 .ul_contacts li a:hover {
-      color: #AE562A;
+      color: var(--bright-color);
   }
 .shortref{
     margin: 2em 0 0 0; 
@@ -191,7 +192,7 @@ box-shadow:
 	padding: 0;
 	height: 6px;
 	border: none;
-    background: linear-gradient(45deg, #AE562A , #ddd);
+    background: linear-gradient(45deg, var(--bright-color) , #ddd);
 }
 
 .ul_skills li{
@@ -206,7 +207,7 @@ box-shadow:
     display: block;
     height: 6px;
     width: 6px;
-    background-color: #84617e;
+    background-color: var(--add-color);
     border-radius: 100%;
   }
 
@@ -225,7 +226,7 @@ box-shadow:
 
 .hytext{
    /* color: #0487cc; */
-    color: #D1704A;
+    color: var(--bright-color);
     font-weight: bold;  
 }
 .prof{
@@ -234,7 +235,7 @@ box-shadow:
     margin-right: auto;  
     /*margin: 10px 0 40px 0; */
     /*color: #757575; */
-    color: rgba(123,51,90,.8);
+    color: var(--add-color);
     display: block; 
 }
 
@@ -255,12 +256,12 @@ box-shadow:
 
 .projects a{
     text-decoration: none;
-    color: rgba(123,51,90,1);
+    color: var(--add-color);
     font-weight: 600;
 }
 
 .projects a:hover {
-    color: #AE562A;
+    color: var(--bright-color);
   }
 
 .languages{
@@ -268,7 +269,7 @@ box-shadow:
 }
 
 .foot{
-    background-color: #f4ece6;
+    background-color: var(--background-color);
    /* background-color: #9D8665; */
     width: 100%;
     display: flex;
