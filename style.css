@@ -266,7 +266,12 @@ padding-right: 10px;
 }
 .projects{
     margin: 10px 0 30px 0; 
+  
 }
+.projects a{
+    text-decoration: none;
+}
+
 
 .languages{
     margin: 10px 0 30px 0; 
