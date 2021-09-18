@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   
@@ -20,6 +24,11 @@
         <li class="item-list">
              <a href="#Skills">Skills</a>
         </li>
+
+        <li class="item-list">
+            <a href="#Languages">Languages</a>
+        </li>
+
         <li class="item-list">
             <a href="#Education">Education</a>
         </li>
@@ -29,7 +38,7 @@
         </li>
         
         <li class="item-list">
-            <a href="#Languages">Languages</a>
+            <a href="#Projects">Projects</a>
         </li>
     </ul>
 </nav>
@@ -42,7 +51,7 @@
 <section class="left-side">
     <div class="short_info">
     <div  class="title">
-        <img src="cat.jpg" class="ava" alt="my photo">
+        <img src="images/cat.jpg" class="ava" alt="my photo">
      </div>
      <div class="mycontacts"  >
       <H1 class="fio">  BALIASNYI SERGHII 
@@ -58,20 +67,28 @@
     </div>
 <div class="shortref" id="Skills">    
    
-<ul>
-    <li class="item"><span class="gradient"> SKILLS: </span>
+
+    <h4><span class="gradient"> SKILLS: </span></h4>
         <hr class="hr-horizontal-gradient">
        
-    <ul>
+    <ul class="ul_skills">
         <li>HTML</li>
         <li>CSS</li>
-        <li>PHP && PHP frameworks(Symfony, Yii)</li>
+        <li>PHP && PHP framework Symfony</li>
         <li>GIT</li>
         <li>JScript</li>
     </ul>
-    </li>
     
-</ul>
+    <div class="languages" id="Languages">
+        <h4><span class="gradient">Languages:</span></h4>
+        <hr class="hr-horizontal-gradient">
+        <ul>
+        <li>English: pre-intermediate (B1) </li>
+        <li>Russian  (native)</li>
+        <li>Ukranian</li>
+        </ul>
+       </div>
+
 </div>
 </section>
 
@@ -90,8 +107,9 @@
     <h4><span class="gradient">Education:</span></h4>
     <hr class="hr-horizontal-gradient">
     <ul>
-    <li>1990—1995 Sevastopol State University - higher education in microelectronics</li>
-    <li>2009- 2011 Kherson State University -higher education in economix</li>
+    <li>1990-1995 Sevastopol State University - higher education in microelectronics</li>
+    <li>2009-2011 Kherson State University -higher education in economix</li>
+    <li>2021 RS School- JS/FE Pre-School completed</li>
     </ul>
    </div>
 
@@ -101,8 +119,19 @@
     <ul>
     <li>1995—1997 Engineer of the department of computer service</li>
     <li>1997-1999 PHP programmer & technical support engineer</li>
-    <li>1999-2021 Head of technical support department </li>
+    <li>1999-2003 Engineer of technical support department </li>
+    <li>2003-2021 Head of technical support department </li>
     </ul>
+   </div>
+
+   <div class="projects" id="Projects"> 
+    <h4><span class="gradient">Projects:</span></h4>
+    <hr class="hr-horizontal-gradient">
+    <ul>
+    <li><a href="https://dreamy-jones-401249.netlify.app/" target="_blank"><i class="far fa-hand-point-right" ></i>&nbspLanding page</a>- layout the Louvre landing page(HTML, CSS, JS, Figma)</li>
+    <li><a href="https://romantic-wiles-4ecf90.netlify.app/" target="_blank"><i class="far fa-hand-point-right" ></i>&nbspSlider with sound</a> - a Vertical Slider (using JavaScript, HTML,CSS) </li>
+    <li><a href="https://sergey0703-custom-video-player.netlify.app/" target="_blank"><i class="far fa-hand-point-right" ></i>&nbsp Custom video player</a> -a simple HTML5 video player(Document Object Model, JS, CSS, HTML) </li> 
+   </ul>
    </div>
 
     <div class="example"> 
@@ -113,10 +142,10 @@
 function DNAStrand(dna){
 let symbol, answer="";
 
-let dna_map={'A': 'T', 'T': 'A',
-'G': 'C', 'C': 'G'};
+let dna_map={'A': 'T', 
+'T': 'A','G': 'C', 'C': 'G'};
 
-for(let i=0; i &lt dna.length; i++){
+for(let i=0;i&lt;dna.length;i++){
    symbol=dna_map[dna[i]];
     answer=answer+symbol;
 }
@@ -127,25 +156,17 @@ return answer;
 
 
 
-   <div class="languages" id="Languages">
-    <h4><span class="gradient">Languages:</span></h4>
-    <hr class="hr-horizontal-gradient">
-    <ul>
-    <li>English: pre-intermediate (B1) </li>
-    <li>Russian  (native)</li>
-    <li>Ukranian</li>
-    </ul>
-   </div>
-
-
+   
 </section>
 
-
 <footer class="foot">
-    <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width=50></a> 
-</footer>
+    <div><a href="https://github.com/Sergey0703"><i class="fab fa-github"></i> </a></div> 
+    <div>2021 by Baliasnyi Serghii</div>
+    <div><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width=50></a> </div>
+    
+</footer> 
 </main>
-   
+
   
 </body>
 </html>
