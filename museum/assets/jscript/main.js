@@ -1,4 +1,4 @@
-const wSliderButtonLeft=document.querySelector('#play');
+const wSliderButtonLeft=document.querySelector('.w-next-button');
 const wSliderItem=document.querySelector(".w-slider-item");
 const containerWelcome=document.querySelector('.container-welcome');
 const slider1=document.querySelector('.slider1');

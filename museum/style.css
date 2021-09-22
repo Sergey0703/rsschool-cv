@@ -287,20 +287,74 @@ letter-spacing: 5px;
   */
   .w-slider-command-panel{
     position: absolute;
-    bottom: -60px;
+    bottom: 0px;
     right: 0px;
     height: 120px;
     width: 600px;
     background-color: rgba(0, 0, 0, 1);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+    z-index: 100;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+    
+  }
+  .w-counter{
+
+    padding-left: 45px;
   }
 
-  .w-slider-button{
-   color: #fff;
+  .w-control-buttons{
+    padding-right: 47px;
   }
+  .w-group-quad{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;   
+  }
+
+  .quad{
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+  }
+
+  .quad-g{
+    height: 16px;
+    width: 16px;
+    background-color: #9D8665;
+  }
+  .w-prev-button{
+    background-image: url(./assets/img/larrow.png);
+    width: 30px;
+    height: 8px;
+    cursor: pointer;
+    background-color: unset;
+    background-repeat: no-repeat;
+    border-width: 0;
+    transition: 0.5s;
+    }
+  
+  .w-next-button{
+    background-image: url(./assets/img/rarrow.png);
+    width: 30px;
+    height: 8px;
+    cursor: pointer;
+    background-color: unset;
+    background-repeat: no-repeat;
+    border-width: 0;
+    transition: 0.5s;
+    }
+
+
 /*****************************************************************************/
   .visiting-text-head{
     font-family: Forum;
