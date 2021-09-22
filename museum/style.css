@@ -309,9 +309,7 @@ letter-spacing: 5px;
     padding-left: 45px;
   }
 
-  .w-control-buttons{
-    padding-right: 47px;
-  }
+  
   .w-group-quad{
     width: 180px;
     display: flex;
@@ -331,6 +329,16 @@ letter-spacing: 5px;
     height: 16px;
     width: 16px;
     background-color: #9D8665;
+  }
+
+  .w-control-buttons{
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;   
+    padding-right: 47px;
   }
   .w-prev-button{
     background-image: url(./assets/img/larrow.png);
