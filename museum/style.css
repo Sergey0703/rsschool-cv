@@ -377,7 +377,7 @@ letter-spacing: 5px;
 .visiting-text-head::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 0;
     right: 0;
     height: 3px;
@@ -391,7 +391,7 @@ letter-spacing: 5px;
     flex-wrap: wrap;
     row-gap: 70px; 
     column-gap: 20px;
-    padding-top: 85px;
+    padding-top: 80px;
    }
 
    .place-href{
@@ -405,7 +405,7 @@ letter-spacing: 5px;
    font-family: Forum;
    font-weight: 400;
    font-size: 32px;  
-   color: #9D8665;
+   color: #000;
    padding-top: 25px;
    position: relative;
    text-transform: uppercase; 
@@ -430,9 +430,18 @@ letter-spacing: 5px;
     font-family: Roboto;
     font-weight: 200;
     font-size: 22px;  
-    color: #9D8665;
+    color: #000;
     padding-top: 15px; 
     line-height: 1.5;
+   }
+
+   .ptext-slim{
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 18px;  
+    color: #000;
+    padding-top: 12px; 
+    line-height: 1;
    }
    /***************************************************************************/
    .explore{
