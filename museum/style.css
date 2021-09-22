@@ -459,7 +459,7 @@ letter-spacing: 5px;
 .explore-text-head::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -5px;
     left: 0;
     right: 0;
     height: 3px;
@@ -469,14 +469,21 @@ letter-spacing: 5px;
     color: #ffffff;  
     max-width: 700px;
   }
+   .explore-group{
+       padding-top: 50px;
+       padding-right: 0;
+   }
+
+   .explore-right{
+    padding: 15px 0 0 0;
+  }
   .explore-p{
-    margin-top: 25px;  
-    font-family: Roboto;
+       font-family: Roboto;
     font-weight: 300;
     font-size: 22px;  
-    padding-top: 16px; 
-    line-height: 1.5;
-    max-width: 630px;
+    padding-top: 32px; 
+    line-height: 1.6;
+    max-width: 653px;
   }
 
   .flex{
