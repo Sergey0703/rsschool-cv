@@ -56,7 +56,7 @@ function initComparisons() {
       w = img.offsetWidth;
       h = img.offsetHeight;
       /*set the width of the img element to 50%:*/
-      img.style.width = (w / 2) + "px";
+      img.style.width = 77+(w / 2) + "px";
       console.log('w=', img.style.width);
       /*create slider:*/
       slider = document.createElement("DIV");
@@ -64,9 +64,9 @@ function initComparisons() {
       /*insert slider*/
       img.parentElement.insertBefore(slider, img);
       /*position the slider in the middle:*/
-      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.top = '15px'; //(h / 2) - (slider.offsetHeight / 2) + "px";
       //slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-      slider.style.left=(w / 2) - (slider.offsetWidth / 2) + "px";
+      slider.style.left=77+(w / 2) - (slider.offsetWidth / 2) + "px";
       console.log('slider.style.top=',slider.style.top, '  slider.style.left=',slider.style.left);
       /*execute a function when the mouse button is pressed:*/
       slider.addEventListener("mousedown", slideReady);
