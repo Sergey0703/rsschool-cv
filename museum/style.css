@@ -476,9 +476,42 @@ letter-spacing: 5px;
 
    .explore-right{
     padding: 15px 0 0 0;
+    position: relative;
+    height: 700px; 
+    width: 720px; 
+  }
+
+  .explore-compare{
+    position: absolute;
+   /* bottom: 0px;*/
+    left: 0px; 
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .explore-compare img{
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index: 100;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    background-color:#fff;
+    opacity: 0.7;
+    border-radius: 50%;
+    background-image: url("/museum/assets/img/explore_slider.png");
+    background-size: contain;
+    /*right: 360px; */
   }
   .explore-p{
-       font-family: Roboto;
+    font-family: Roboto;
     font-weight: 300;
     font-size: 22px;  
     padding-top: 32px; 
