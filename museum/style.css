@@ -344,6 +344,7 @@ letter-spacing: 5px;
     background-image: url(./assets/img/larrow.png);
     width: 30px;
     height: 8px;
+    /*padding-bottom: 7px;*/
     cursor: pointer;
     background-color: unset;
     background-repeat: no-repeat;
@@ -355,6 +356,7 @@ letter-spacing: 5px;
     background-image: url(./assets/img/rarrow.png);
     width: 30px;
     height: 8px;
+    /*padding-bottom: 7px;*/
     cursor: pointer;
     background-color: unset;
     background-repeat: no-repeat;
@@ -492,7 +494,7 @@ letter-spacing: 5px;
 
   .explore-compare img{
     display: block;
-    vertical-align: middle;
+   /* vertical-align: middle;*/
   }
   
   .img-comp-slider {
@@ -527,14 +529,43 @@ letter-spacing: 5px;
     color: #CAAA7D;
    }
   /*video**************************************************************************************/
+  
+.video-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 85px;
+  padding: 0px 0px;
+  background-color: #ffffff;
+}
+.video-title-head{
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 80px;  
+  color: #9D8665;
+  /*margin-bottom: 100px;
+  position: relative;*/
+  text-transform: uppercase; 
+}
+
+
+.video-title-text{
+  max-width: 720px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px; 
+  line-height: 1.7;
+} 
+
   .vposter{
-        
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 1440px;
-        height: 629px;
-        background-image: url(./assets/img/vposter.jpg);
+   margin: 80px 0 0 0;     
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 1440px;
+   height: 650px;
+   background-image: url(./assets/img/vposter.jpg);
     
   }
   .btn-play{
@@ -550,17 +581,16 @@ letter-spacing: 5px;
   } */
 .vcontrols{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1440px;
     height: 85px;
-    padding: 0 20px;
+   /* padding: 0 20px; */
     background-color: #000000;
 }
 
 .btn-control{
-    width: 40px;
-    height: 36px; 
+   
     cursor: pointer;
     background-position: center center;
     background-repeat: no-repeat;
@@ -570,19 +600,21 @@ letter-spacing: 5px;
     
 }
 .progress {
-    background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%);
-    border: solid 0px #24809E;
-    border-radius: 8px;
+   /* background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%);*/
+    background: linear-gradient(to right, #710707 0%, #710707 54%, #fff 40%, #fff 100%);
+    
+   /* border: solid 0px #24809E;
+    border-radius: 4px; */
     height: 7px;
-    width: 820px;
+    width: 929px;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
   }
   
   .progress::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     -webkit-appearance: none;
     cursor: ew-resize;
@@ -590,9 +622,9 @@ letter-spacing: 5px;
   }
 
   .progress-small {
-    background: linear-gradient(to right, #24809E 0%, #24809E 40%, #fff 40%, #fff 100%);
-    border: solid 0px #24809E;
-    border-radius: 8px;
+    background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);
+    /*border: solid 0px #24809E;
+    border-radius: 8px;*/
     height: 7px;
     width: 155px;
     outline: none;
@@ -601,8 +633,8 @@ letter-spacing: 5px;
   }
   
   .progress-small::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     -webkit-appearance: none;
     cursor: ew-resize;
@@ -616,6 +648,9 @@ letter-spacing: 5px;
 
 .btn-play-small{
     background-image: url(./assets/img/btn-play-small.svg);
+    margin-left: 25px;
+    width: 26px;
+    height: 31px; 
 }
 
 .btn-rewind-next{
@@ -624,39 +659,29 @@ letter-spacing: 5px;
 
 .btn-volume{
     background-image: url(./assets/img/btn-volume.svg);
+    width: 40px;
+    height: 36px; 
 }
 
 .btn-fullscr{
     background-image: url(./assets/img/btn-fullscr.svg);
+    margin-right: 25px;
+    width: 40px;
+    height: 36px; 
 }
 
-.video-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1440px;
-    height: 85px;
-    padding: 50px 0px;
-    background-color: #ffffff;
-}
-.video-title-head{
-    font-family: Forum;
-    font-weight: 400;
-    font-size: 80px;  
-    color: #9D8665;
-    /*margin-bottom: 100px;
-    position: relative;*/
-    text-transform: uppercase; 
+.v-youtube{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-
-  .video-title-text{
-    max-width: 720px;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 22px; 
-    line-height: 1.5;
-  } 
+.v-item{
+  width: 452px;
+  height: 254px;
+}
   /**************************************************************************/
   .byu-tickets-text-head{
     font-family: Forum;
