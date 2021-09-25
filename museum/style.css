@@ -740,12 +740,29 @@ margin-top: 40px;
   .picture-container{
       padding-top: 50px; 
       height: 1910px;
+     /* height: 2850px;*/
+      width: 1440px;
       overflow-y: hidden;
   }
   .picture-inner-container{
-    height: 2850px;
+    height: 2720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-content: center;*/
+    flex-wrap: wrap;  
+    flex-basis: 20%; 
+    row-gap: 24px;
+    column-gap: 36px;
+  }
+  .picture-inner-container img{
+    width: 456px;
+    
   }
 
+   .pict{
+     width: 456px;
+   } 
   /**************************************************************************/
   .byu-tickets-text-head{
     font-family: Forum;
