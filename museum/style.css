@@ -756,6 +756,7 @@ margin-top: 40px;
      /* height: 2850px;*/
       width: 1440px;
       overflow-y: hidden;
+      box-shadow:  0 0 -240px;
   }
   .picture-inner-container{
     height: 2720px;
@@ -767,6 +768,7 @@ margin-top: 40px;
     flex-basis: 20%; 
     row-gap: 24px;
     column-gap: 36px;
+    
   }
   .picture-inner-container img{
     width: 456px;
@@ -1042,6 +1044,7 @@ margin-top: 40px;
       font-weight: 500;
       font-size: 28px; 
       line-height: 1.2; 
+      padding-top: 2px;
      }
 
     .contacts-left{
@@ -1052,7 +1055,7 @@ margin-top: 40px;
     }
 
     .contacts-p{
-      padding-top: 40px;
+      padding-top: 38px;
       line-height: 2.4;
     }
     .mail{
@@ -1068,13 +1071,26 @@ margin-top: 40px;
     }
      
     /*footer****************************************************************************/
+    .footer::after {
+      content: "";
+      position: absolute;
+      bottom: 122px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #ffffff; 
+    }
+    footer{
+      height: 392px;
+      position: relative;
+    }
     .footer-main{
       display:flex;
       justify-content: space-between;
-      padding-bottom: 200px;
+      padding-top: 3px;
     }
     .footer-logo{
-      padding-top: 8px;
+      padding-top: 10px;
     }
     .footer-left{
       display:flex;
@@ -1083,17 +1099,18 @@ margin-top: 40px;
     }
 
     footer nav {
-      max-height: 100px;
-      padding-left: 150px;
+      max-height: 160px;
+      padding-left: 140px;
       max-width: 550px;
     }
     .footer-list{
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
-     max-height: 150px;
+     max-height: 154px;
      justify-content: space-between;
      column-gap: 150px;
+     width: 380px;
      }
      footer nav ul li{
        max-width: 200px;
@@ -1121,7 +1138,7 @@ margin-top: 40px;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      padding-top: 90px;
+      padding-bottom: 16px;
     }
     .social-item {
     margin-left: 25px;
@@ -1159,4 +1176,24 @@ margin-top: 40px;
 .ahref{
   text-decoration: none;
   color: #000000;
+}
+.down{
+ 
+color: #ffffff;
+/*width: 1440px;*/
+height: 121px;
+/*margin: 0 auto;*/
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-family: Roboto;
+font-size: 22px;
+font-weight: 200;
+letter-spacing: 2px;
+padding-top: 40px;
+
+}
+.down a{
+  text-decoration: none;
+  color:#ffffff;
 }
