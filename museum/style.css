@@ -1156,3 +1156,7 @@ margin-top: 40px;
 .pinterest {
   background-image: url(./assets/img/pinterest.svg);
 }
+.ahref{
+  text-decoration: none;
+  color: #000000;
+}
