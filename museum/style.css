@@ -732,7 +732,7 @@ background-color: #710707;
   height: 12px;
   color: white;
  /* background-color: #999999;*/
-  background-image: url(/museum/assets/img/v_lstroke.svg);
+  background-image: url(./assets/img/v_lstroke.svg);
   cursor: pointer;
  /* fill-opacity: 0.1;
   fill: violet; */
@@ -743,7 +743,7 @@ background-color: #710707;
   height: 12px;
   color: #000000;
  /* background-color: #999999;*/
-  background-image: url(/museum/assets/img/v_rstroke.svg);
+  background-image: url(./assets/img/v_rstroke.svg);
   cursor: pointer;
 }
 
