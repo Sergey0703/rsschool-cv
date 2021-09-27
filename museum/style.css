@@ -1033,10 +1033,10 @@ background-color: #710707;
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     z-index:100;
     }
 
@@ -1054,7 +1054,36 @@ background-color: #710707;
     background-color: #ffffff;
     z-index:110;
     }
+    .book-content{
+      padding-top: 91px;
+      width: 970px;
+      height: 663px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border: 2px solid #000000;
+    }
+    
+    .book-left{
+      width:  400px;
+      height: 663px;
+      border: 2px solid #000000;
 
+    }
+    .book-left-logo{
+    background-image: url(./assets/img/logo-golden.svg);
+    height: 43px;
+    margin: 0 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+    .book-right{
+      width: 530px;
+      height: 663px;
+      border: 2px solid #000000;
+    }
 
     /*contacts***********************************************************************/
 
