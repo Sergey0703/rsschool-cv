@@ -780,7 +780,7 @@ background-color: #710707;
       background-color:  linear-gradient(to top, black 50%, transparent 100%);*/
   }
   .picture-inner-container{
-    height: 2720px;
+    height: 3000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -789,7 +789,7 @@ background-color: #710707;
     flex-basis: 20%; 
     row-gap: 24px;
     column-gap: 36px;
-    
+       
   }
   .picture-inner-container img{
     width: 456px;
