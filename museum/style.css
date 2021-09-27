@@ -1092,6 +1092,12 @@ background-color: #710707;
     }
      
     /*footer****************************************************************************/
+    .container-footer{
+      max-width: 1440px; 
+      margin: 0 auto;
+      padding: 75px 0px 0px 0px;
+     
+  }
     .footer::after {
       content: "";
       position: absolute;
