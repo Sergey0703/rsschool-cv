@@ -637,7 +637,8 @@ letter-spacing: 5px;
   }
 
   .progress-small {
-    background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);
+   /* background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);*/
+    
     /*border: solid 0px #24809E;
     border-radius: 8px;*/
     height: 7px;
@@ -645,6 +646,11 @@ letter-spacing: 5px;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
+  }
+
+  .ps-bg{
+    background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);
+
   }
   
   .progress-small::-webkit-slider-thumb {
@@ -1054,8 +1060,8 @@ background-color: #710707;
       content: '';
       width: 28px;
       height: 28px;
-      right: 65px;
-      top: 62px;
+      right: 270px;
+      top: 68px;
       z-index: 200;
     }
     #slide_in {
@@ -1073,7 +1079,7 @@ background-color: #710707;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      border: 2px solid #000000;
+     /* border: 2px solid #000000;*/
     }
     
     .book-left{
@@ -1123,7 +1129,7 @@ background-color: #710707;
 }
 
  .bookDate, .bookTime {
-   width: 188px;
+   width: 185px;
    height: 43px;
    border: 1px solid #000000;
  }
