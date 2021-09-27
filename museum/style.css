@@ -923,13 +923,6 @@ background-color: #710707;
 
 .tickets-amount{
     width: 175px;
-   /* display: flex;
-
-    flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: flex-start; 
-    row-gap: 20px; 
-    column-gap: 40px;*/
     color: #ffffff;
     }
 
@@ -1033,6 +1026,36 @@ background-color: #710707;
     .btn-amount-total:hover {
       background: #9D8665;
     }
+
+    .book-overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    z-index:100;
+    }
+
+    .book-overley-hide{
+      left: -2500px;
+    }
+    .book-overlay-init{
+      left: 0px;
+    }
+
+    #slide_in {
+    margin: 2% auto;
+    width: 1440px;
+    height: 845px;
+    background-color: #ffffff;
+    z-index:110;
+    }
+
+
     /*contacts***********************************************************************/
 
     .contacts-head{
