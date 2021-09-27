@@ -1060,8 +1060,8 @@ background-color: #710707;
       content: '';
       width: 28px;
       height: 28px;
-      right: 270px;
-      top: 68px;
+      right: 30px;
+      top: 30px;
       z-index: 200;
     }
     #slide_in {
@@ -1070,6 +1070,7 @@ background-color: #710707;
     height: 845px;
     background-color: #ffffff;
     z-index:110;
+    position: relative;
     }
     .book-content{
       padding-top: 91px;
