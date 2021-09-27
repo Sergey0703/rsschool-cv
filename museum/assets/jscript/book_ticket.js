@@ -1,10 +1,13 @@
 const btnBook=document.querySelector('.btn-amount-total');
 const bookOverlay=document.querySelector('.book-overlay');
 const slideIn=document.querySelector('#slide_in');
+const bookClose=document.querySelector('.book-close');
 
 btnBook.addEventListener('click',()=>initBooking());
 bookOverlay.addEventListener('click',()=>closeBooking());
 slideIn.addEventListener('click',()=>slideBooking());
+bookClose.addEventListener('click',()=>closeBooking());
+
 let slide=0;
 const slideBooking=()=>{
    console.log('slideIn'); 

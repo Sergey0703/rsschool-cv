@@ -348,15 +348,48 @@
             </div>  
             <div class="book-overlay book-overley-hide">
             <div id="slide_in">
+                <div class="book-close"></div>
                 <div class="book-content">
                     <div class="book-left">
-                       <div class="book-left-logo">
-
-                       </div>
-                       
+                       <div class="book-left-logo"></div>
+                       <div class="book-title">Booking Tickets</div>
+                       <div class="book-tour">Tour to Louvre</div>
+                       <div class="book-p">
+                        <input type="date" class="bookDate">
+                        <input type="time" class="bookTime">
+                      </div>
+                        <div><input type="text" class="bookName"></div>
+                        <div><input type="text" class="bookEmail"></div>
+                        <div><input type="text" class="bookPhone"></div>
+                        <div>
+                            <select class="bookTicketType">
+                                   <option value="1">Type1</option>
+                                   <option value="2">Type2</option>
+                            </select>
+                        
+                        </div>
+                        <div class="book-left-down">
+                         <div class="entry">Entry Ticket</div>
+                         <div class="entry1">
+                         <div class="entry-down">Basic 18+ (20 €)</div> 
+                            <div class="b-amount-buttons">
+                            <button onclick="this.nextElementSibling.stepDown()" class="b-btn-amount">&ndash;</button>
+                            <input type="number" value="1" min="0" max="20" readonly name="binput1" class="b-amount-input">
+                            <button onclick="this.previousElementSibling.stepUp()" class="b-btn-amount">+</button> 
+                            </div>
+                          </div>  
+                          <div class="entry2">
+                         <div class="entry-down">Senior 65+ (10 €)</div> 
+                            <div class="b-amount-buttons">
+                            <button onclick="this.nextElementSibling.stepDown()" class="b-btn-amount">&ndash;</button>
+                            <input type="number" value="1" min="0" max="20" readonly name="binput2" class="b-amount-input">
+                            <button onclick="this.previousElementSibling.stepUp()" class="b-btn-amount">+</button> 
+                            </div>
+                        </div>
+                        </div>
                     </div>
                     <div class="book-right">
-
+                        <div>Overview</div>
                     </div>
                 </div>
                

@@ -921,7 +921,7 @@ background-color: #710707;
     padding: 0px 0px;
 }
 
-.tickets-amount{
+  .tickets-amount{
     width: 175px;
     color: #ffffff;
     }
@@ -1033,10 +1033,10 @@ background-color: #710707;
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
     z-index:100;
     }
 
@@ -1046,7 +1046,18 @@ background-color: #710707;
     .book-overlay-init{
       left: 0px;
     }
-
+    .book-close {
+      background-image: url(./assets/img/close.svg);
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      content: '';
+      width: 28px;
+      height: 28px;
+      right: 65px;
+      top: 62px;
+      z-index: 200;
+    }
     #slide_in {
     margin: 2% auto;
     width: 1440px;
@@ -1061,27 +1072,174 @@ background-color: #710707;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
+      justify-content: space-between;
       border: 2px solid #000000;
     }
     
     .book-left{
       width:  400px;
       height: 663px;
-      border: 2px solid #000000;
+     
 
     }
     .book-left-logo{
     background-image: url(./assets/img/logo-golden.svg);
     height: 43px;
-    margin: 0 6px;
     background-size: contain;
     background-repeat: no-repeat;
     }
 
+    .book-title{
+      font-family: Forum;
+      font-weight: 400;
+      font-size: 50px;  
+      color: #9D8665;
+      /*padding-bottom: 25px;*/
+      position: relative;
+      text-transform: uppercase; 
+  }
+  .book-title::after {
+      content: "";
+      position: absolute;
+      bottom: -48px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #740C11; 
+    }
+    
+    .book-tour{
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 18px;  
+      color: #710707;
+      padding: 14px 0 0 0;
+      /*padding-bottom: 25px;*/
+      position: relative;
+     
+  }
+.book-p{
+  padding-top: 72px;
+}
+
+ .bookDate, .bookTime {
+   width: 188px;
+   height: 43px;
+   border: 1px solid #000000;
+ }
+ .bookTime {
+  
+  margin-left: 16px;
+}
+.bookName, .bookEmail, .bookPhone, .bookTicketType {
+  margin-top: 20px;
+  width: 398px;
+  height: 43px;
+  border: 1px solid #000000;
+}
+
+.book-left-down {
+  margin-top: 20px;
+  width: 398px;
+  height: 133px;
+  border: 1px solid #000000;
+}
+  
+ .entry{
+  margin-top: 10px;
+  padding-left: 12px;
+  font-family: Forum;
+  font-size: 18px;
+  font-weight: 400;
+  color: #9D8665;
+  position: relative;
+  }
+
+  .entry::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+      background-color: #740C11; 
+      z-index: 1000;
+    }
+    .entry1{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      height: 25px;
+
+    }
+  .entry-down{
+    margin-top: 24px;
+    padding-left: 12px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    
+  }
+
+  .entry2{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 25px;
+    margin-top: 18px;
+  }
+
+  .b-amount-buttons{
+    /*margin-top: 16px;*/
+    margin-right: 14px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 105px;
+    height: 25px;
+    border: 1px solid #000000;
+
+        
+  }
+
+  .b-btn-amount {
+
+      /*padding: 10px;*/
+      color: #ffffff;
+      background-color: #000000;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      width: 35px;
+      height: 25px;
+  }
+
+  .b-amount-input{
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Roboto;
+    width: 35px;
+    border-style: none;
+    text-align: center;
+    font-stretch: wider;
+    font-size: 18px;
+    padding: 0 0;
+}
+.b-amount-input::-webkit-inner-spin-button,
+.b-amount-input::-webkit-outer-spin-button,
+.b-amount-input:focus {
+  display: none;
+}
+
     .book-right{
       width: 530px;
       height: 663px;
+      margin-right: 0px;
       border: 2px solid #000000;
     }
 
