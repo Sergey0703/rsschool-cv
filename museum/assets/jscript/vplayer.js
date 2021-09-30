@@ -4,6 +4,9 @@ const btnVolume=document.querySelector('.progress-small');
 btnVolume.addEventListener('change',volumeChange);
 const video = document.querySelector('.viewer');
 
+let setVideoProgress = (value) => document.documentElement.style.setProperty('--progress-position', (value) + '%')
+let setVolume = (value) => document.documentElement.style.setProperty('--volume-position', (value) + '%')
+
 function volumeChange(){
     let volume = btnVolume.value ;
     console.log('v=',volume);
@@ -25,4 +28,4 @@ newStyles.innerHTML = ".ps-bg2 {" +
     */
   }
 
-export default volumeChange;
+export default setVolume;
