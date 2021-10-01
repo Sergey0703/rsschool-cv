@@ -1464,7 +1464,7 @@ padding-top: 40px;
   align-items: center;
   cursor: pointer;
   top: 64px;
-  right: 0px;
+  right: 20px;
 }
 
 .menu-open>span,
@@ -1584,7 +1584,6 @@ header nav ul a {
 }
 
 
-
   .container-welcome{
     max-width: 1024px; 
     min-height: 585px; 
@@ -1611,11 +1610,13 @@ header nav ul a {
 .w-slider{
   width: 700px;
   height: 525px;
+  right: 20px;
 }
 .w-slider-item{
   width: 700px;
   height: 525px;
   background-size: cover;
+  
 }
 .slider1{
   
@@ -1687,10 +1688,10 @@ header nav ul a {
     width: 700px;
     font-size: 20px;
     font-weight: 400;
-    
+    right: 20px;
   }
   .w-counter{
-    padding-left: 198px;
+    padding-left: 200px;
   }
 
   
