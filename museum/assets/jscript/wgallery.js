@@ -8,6 +8,7 @@ const slider1=document.querySelector('.slider1');
 document.querySelector('.menu-open').addEventListener('click', function(){
   document.querySelector('.menu-open span').classList.toggle('active');
   document.querySelector('#nav').classList.toggle('active');
+  document.querySelector('.welcome-area').classList.toggle('passive');
 })
 
 const slidesCount=5;

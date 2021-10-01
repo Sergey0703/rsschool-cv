@@ -1502,8 +1502,14 @@ transition-duration: 0.05s;
 }
 nav.active{
   display: block;
+  left:0px;
+  background-color: #000000;
   z-index: 1000; 
 } 
+.welcome-area.passive{
+  /*display: block;*/
+  z-index: 0;    
+ }
 /************************************************************/
 @media (max-width: 1440px) {
   .container-welcome{
@@ -1535,31 +1541,42 @@ nav.active{
 }
 
 @media (max-width: 1024px) {
- 
+  
 .menu-open {
   display: block;
 }
   
 header nav {
   position: absolute;
-  left: 56px;
-  top: 167px;
-  width: 120px;
+  left: -297px;
+  top: 130px;
+  width: 300px;
   height: 500px;
   display: none;
+  background-size: 297px 500px;
+  padding-left: 55px;
+  padding-top: 30px;
 }
 header nav ul {
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 21px;
+}
+header nav ul li {
+ 
+  width: 120px;
+  
 }
 header nav ul li::after {
+  margin-top: 10px;
   float: right;
   content: '';
   display: block;
-  background-image: url('assets/svg/li-arrow.svg');
+  background-image: url('./assets/img/menu_ar.svg');
+  background-repeat: no-repeat;
   width: 8px;
   height: 12px;
+ 
 }
 header nav ul a {
   font-size: 20px;
@@ -1734,9 +1751,7 @@ header nav ul a {
 
    
 
-#navOpen:checked~nav {
-  display: initial;
-}
+
 }
 
 
