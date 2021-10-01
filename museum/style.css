@@ -269,8 +269,9 @@ letter-spacing: 5px;
     font-size: 22px;
     letter-spacing: 2px;
     width: 360px;
-    height: 50px;
-    padding-top: 25px;
+    height: 80px;
+    line-height:80px;
+    /*padding-top: 25px;*/
     margin-top: 75px;
     border-radius: 10px;
   }
@@ -1595,7 +1596,7 @@ header nav ul a {
 .container{
   max-width: 1024px; 
   margin: 0 auto;
-  padding: 75px 20px;
+  padding: 71px 20px;
  
 } 
 .header-container{
@@ -1750,12 +1751,56 @@ header nav ul a {
     transition: 0.5s;
     }
 
-   
+    .visiting-text-head {
+     
+      font-size: 50px;
+      padding-bottom: 25px;
+      
+  }
+  .visiting-places{
+    
+    padding-top: 68px;
+    padding-left: 110px;
+    padding-right: 110px;
+    row-gap: 60px;
+   }
 
+   .visiting-places div{
+     width: 330px;
+     height: 345px;
+   }
 
+   .visiting-places img{
+     width: 100%;
+     height: 215px;
+   }
+   .place-h3 {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    padding-top: 21px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.ptext {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 20px;
+  color: #000;
+  padding-top: 15px;
+  line-height: 1.5;
 }
 
-
+.ptext-slim {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 16px;
+  color: #000;
+  padding-top: 12px;
+  line-height: 0.8;
+}
 /*
 @media (max-width: 796px) {
   .picture-inner-container img {
