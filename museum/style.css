@@ -1596,7 +1596,7 @@ header nav ul a {
 .container{
   max-width: 1024px; 
   margin: 0 auto;
-  padding: 71px 20px;
+  padding: 71px 20px 60px 20px;
  
 } 
 .header-container{
@@ -1761,7 +1761,7 @@ header nav ul a {
     
     padding-top: 68px;
     padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 100px;
     row-gap: 60px;
    }
 
@@ -1800,6 +1800,20 @@ header nav ul a {
   color: #000;
   padding-top: 12px;
   line-height: 0.8;
+}
+
+.visiting-places .place-h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: 1s;
+  right: 55%;
+  height: 2px;
+  background-color: #710707;
+}
+.explore {
+  margin-top: 0px;
 }
 /*
 @media (max-width: 796px) {
