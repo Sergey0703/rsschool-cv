@@ -1343,14 +1343,26 @@ background-color: #710707;
 }
 .book-r-total{
   margin-top: 20px;
+  position: relative;
+}
+.book-r-total::after{
+  content: "";
+      position: absolute;
+      bottom: 50px;
+      left: 0px;
+      right: 0px;
+      height: 2px;
+      background-color: #740C11;
 }
 .book-r-total-row{
       font-family: Roboto;
       font-weight: 500;
       font-size: 22px;
       margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
 }
-.book-r-total-row::before {
+.row-span::before {
   margin-right: 10px;
   display: block;
   width: 30px;
@@ -1362,6 +1374,10 @@ background-color: #710707;
   margin-top: 2px;
 }
 
+.row-total{
+  font-size: 32px;  
+  margin-top: 23px;
+}
     /*contacts***********************************************************************/
 
     .contacts-head{
