@@ -24,7 +24,7 @@ function initComparisons() {
       /*insert slider*/
       img.parentElement.insertBefore(slider, img);
       /*position the slider in the middle:*/
-      slider.style.top = '15px'; //(h / 2) - (slider.offsetHeight / 2) + "px";
+      //slider.style.top = '0px'; //(h / 2) - (slider.offsetHeight / 2) + "px";
       //slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
       slider.style.left=77+(w / 2) - (slider.offsetWidth / 2) + "px";
       console.log('slider.style.top=',slider.style.top, '  slider.style.left=',slider.style.left);
