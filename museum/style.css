@@ -2002,6 +2002,24 @@ margin-top: 20px;
 
 }
 
+.footer {
+  height: 368px;
+  padding: 0 20px 0 20px;;
+}
+
+.container-footer{
+  padding: 48px 0 0 0;
+}
+footer nav{
+  padding-left: 40px;
+  padding-top: 4px;
+}
+.footer-list {
+  column-gap: 60px;
+}
+.social{
+  padding-bottom: 14px;
+}
 }
 /*
 @media (max-width: 796px) {
