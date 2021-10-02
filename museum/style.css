@@ -1267,6 +1267,16 @@ background-color: #710707;
       height: 663px;
       margin-right: 0px;
       border: 2px solid #000000;
+     
+    }
+
+    .book-right-in{
+     padding: 25px 30px 30px 26px;
+    }
+    .book-r-group41{
+           height: 151px;
+           position: relative;
+           
     }
 
     /*contacts***********************************************************************/
@@ -2020,6 +2030,16 @@ footer nav{
 .social{
   padding-bottom: 14px;
 }
+
+#slide_in {
+   width: 1030px;
+  height: 768px;
+   }
+  .book-content{
+    padding-top: 75px;
+    width: 970px;
+    height: 663px;
+    }
 }
 /*
 @media (max-width: 796px) {
