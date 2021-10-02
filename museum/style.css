@@ -837,7 +837,7 @@ background-color: #710707;
 .buy-tickets-text-head::after {
     content: "";
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     left: 0;
     right: 0;
     height: 3px;
@@ -1284,7 +1284,7 @@ background-color: #710707;
     .contacts-head::after {
       content: "";
       position: absolute;
-      bottom: -28px;
+      bottom: -10px;
       left: 0;
       right: 0;
       height: 3px;
@@ -1900,7 +1900,6 @@ margin-top: 40px;
 }
 */
 .gallery-text-head {
- 
   font-size: 50px;
   padding-bottom: 25px;
 }
@@ -1918,6 +1917,91 @@ margin-top: 40px;
   width: 304px;
   /*width: calc(33.3% - 24px);*/
 }
+.buy-tickets-text-head {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.buy-tickets {
+  padding-top: 67px;
+  padding-right: 30px;
+}
+.buy-tickets img{
+ width: 700px;
+ height: 440px;
+}
+.buy-tickets-right {
+   width: 175px; 
+   height: 440px;
+}
+.tickets-amount{
+  height: 440px;
+}
+.amount-head {
+  text-align: left;
+  padding: 0px 0px;
+}
+
+.amount-head-small1 {
+  margin-left: 0px;
+  padding-top: 28px;
+}
+.amount-buttons {
+  margin-top: 12px;
+  margin-left: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+}
+.amount-input {
+  width:80px;
+}
+.amount-head-small2 {
+  
+  padding-top: 28px;
+  margin-left: 0px;
+}
+.amount-total {
+  text-align: left;
+  padding-top: 23px;
+
+  
+}
+.btn-amount-total{
+margin-top: 20px;
+
+}
+.sum220{
+  padding-left: 15px;
+}
+
+.contacts-head {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+.map{
+  width: 694px;
+  height: 454px;
+}
+.contacts-main{
+  padding-top: 50px;
+}
+.contacts-h4 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  padding-top: 0px;
+}
+.contacts-p {
+  padding-top: 28px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.8;
+
+}
+
 }
 /*
 @media (max-width: 796px) {
