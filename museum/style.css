@@ -1276,9 +1276,14 @@ background-color: #710707;
     .book-r-group41{
            height: 151px;
            position: relative;
-           
-    }
 
+    }
+    .book-r-ov{
+      font-family: Roboto;
+      font-weight: 500;
+    
+    font-size: 32px;
+    } 
     /*contacts***********************************************************************/
 
     .contacts-head{
