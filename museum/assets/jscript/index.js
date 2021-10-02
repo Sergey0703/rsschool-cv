@@ -7,3 +7,4 @@ import setVolume from './vplayer.js';
 
 pictGallery();
 initComparisons();
+

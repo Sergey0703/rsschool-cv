@@ -1271,19 +1271,97 @@ background-color: #710707;
     }
 
     .book-right-in{
-     padding: 25px 30px 30px 26px;
+     padding: 25px 30px 26px 30px;
     }
     .book-r-group41{
-           height: 151px;
-           position: relative;
+      height: 151px;
+      position: relative;
 
     }
     .book-r-ov{
+     font-family: Roboto;
+     font-weight: 500;
+     font-size: 32px;
+    } 
+    .book-r-tour{
       font-family: Roboto;
       font-weight: 500;
+      font-size: 22px;
+      color: #740C11;
+    }
+    .museum-min{
+      position: absolute;
+      width: 150px;
+      height: 120px;
+      top: 0px;
+      right: 0px;
+    }
+    .book-r-ul{
+      margin-top: 12px;
+    }
+    .book-r-d , .book-r-t , .book-r-e{
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
     
-    font-size: 32px;
-    } 
+
+    .book-r-d::before{
+      background-image: url(./assets/img/date.svg);
+      height: 20px;
+      width: 20px;
+      display: block;
+      content: '';
+      float: left;
+      margin-right: 10px;
+      margin-top: 3px;
+      background-repeat: no-repeat;
+  }
+
+  .book-r-t::before{
+    background-image: url(./assets/img/time.svg);
+    height: 20px;
+    width: 20px;
+    display: block;
+    content: '';
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+}
+.book-r-e::before{
+  background-image: url(./assets/img/temp.svg);
+  height: 20px;
+  width: 20px;
+  display: block;
+  content: '';
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;
+  background-repeat: no-repeat;
+}
+.book-r-total{
+  margin-top: 20px;
+}
+.book-r-total-row{
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 4px;
+}
+.book-r-total-row::before {
+  margin-right: 10px;
+  display: block;
+  width: 30px;
+  height: 21px;
+  content: '';
+  background-color: #000;
+  border-radius: 4px;
+  float: left;
+  margin-top: 2px;
+}
+
     /*contacts***********************************************************************/
 
     .contacts-head{
