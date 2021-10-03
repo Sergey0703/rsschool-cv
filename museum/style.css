@@ -2352,9 +2352,37 @@ max-width: 768px;
 .vcontrols {
   width: 728px;
   height: 53px;
-  padding-left: 40px;
-  padding-right: 40px;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  /*column-gap: 50px;*/
 }
+.btn-fullscr{
+  margin-left: 16px;
+}
+.progress {
+  /* background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%); */
+  background: linear-gradient(to right, #710707 0%, #710707 54%, #fff 40%, #fff 100%);
+  height: 5px;
+  width: 768px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  position:absolute;
+  top: -3px;
+  left: 0px;
+}
+.progress-small {
+  /* background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%); */
+  height: 5px;
+  width: 486px;
+  margin-left: 18px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
 .btn-play {
   width: 80px;
   height: 80px;
