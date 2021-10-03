@@ -2466,10 +2466,7 @@ max-width: 768px;
 }
 .contacts-p{
   padding-top: 34px;
-    font-family: Roboto;
-    font-weight: 300;
-   
-    line-height: 2;
+  line-height: 2;
   font-size: 18px;
 }
 
@@ -2477,5 +2474,60 @@ max-width: 768px;
   width: 728px;
   height: 476px;
   padding-top: 30px;
+}
+.footer {
+  height: 411px;
+  padding: 0px 20px 0 20px;
+  margin-top: -8px;
+}
+.footer-left{
+  padding-right: 20px;
+}
+.container-footer {
+  padding: 36px 0 0 0;
+}
+.footer-list{
+  padding-left: 60px;
+  column-gap: 145px;
+  padding-top: 0px;
+  row-gap: 0px;
+}
+.footer nav {
+  flex-wrap: wrap;
+ width: 400px;
+ height: 121px;
+}
+.item-list{
+  /*padding-top: 10px;*/
+  padding: 0 0 0 0;
+  font-size: 18px;
+  height: 45px;
+}
+.item-list a{
+  /* padding-left: 20px; */
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.footer-main{
+  flex-wrap: wrap;
+  row-gap: 55px;
+  padding-right: 0px;
+}
+.footer-right {
+  margin-left: 270px;
+  margin-top: 5px;
+}
+.down {
+    height: 71px;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffffff;
 }
 }
