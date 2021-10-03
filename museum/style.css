@@ -660,7 +660,7 @@ letter-spacing: 5px;
   }
 
   .progress-small {
-   /* background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);*/
+    background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);
     
     /*border: solid 0px #24809E;
     border-radius: 8px;*/
@@ -1702,6 +1702,9 @@ nav.active{
  left:20px;
      
 }
+.none1024 {
+  display: block;
+}
 }
 
 @media (max-width: 1024px) {
@@ -1998,8 +2001,11 @@ header nav ul a {
   font-weight: 300;
   font-size: 20px;
 }
- .none {
+ .none1024 {
   display: none;
+}
+.none768{
+  display: block;
 }
 .explore-right {
   margin: 0 auto;
@@ -2420,6 +2426,12 @@ max-width: 768px;
   width: 352px;
   /*width: calc(33.3% - 24px);*/
 }
+
+.explore-text-head::after {
+  
+  right: -340px;
+}
+
 .buy-tickets-text-head {
   font-size: 40px;
   padding-bottom: 25px;
@@ -2574,9 +2586,13 @@ max-width: 768px;
     width: 530px;
    /* height: 663px;*/
    }
+   .book-p {
+    padding-top: 50px;
+   }
 .book-right {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 530px;
+  padding: 25px 10px 26px 10px;
 }
 
 .bookDate, .bookTime {
@@ -2590,13 +2606,13 @@ max-width: 768px;
 }
 .bookName, .bookEmail, .bookPhone, .bookTicketType {
  margin-top: 20px;
- width: 539px;
+ width: 530px;
  height: 43px;
  border: 1px solid #000000;
 }
 .book-left-down {
   margin-top: 20px;
-  width: 539px;
+  width: 530px;
   height: 133px;
   border: 1px solid #000000;
 }
