@@ -2253,15 +2253,23 @@ footer nav{
    background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/1.jpg);
  }
 .w-slider-command-panel {
-  /*width: 768px;*/
+  box-sizing: border-box;
+  width: 768px;
   font-size: 20px;
   font-weight: 400;
   right: 0px;
   height: 100px;
-  padding-left: 100px;
- /* padding-right: 190px;*/
+  padding-left: 186px;
+  padding-right: 180px;
    justify-content: space-between;
+
 }
+
+.w-control-buttons {
+  width: 80px;
+  padding-right: 0px;
+}
+
 .w-counter {
    padding-left: 0;
 }
@@ -2433,7 +2441,7 @@ max-width: 768px;
   margin-top: 10px;
 }
 .amount-head-small2 {
-  padding-top: 22px;
+  padding-top: 24px;
   margin-left: 0px;
 }
 .amount-total {
