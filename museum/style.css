@@ -504,6 +504,7 @@ letter-spacing: 5px;
    }
 
    .explore-right{
+   /* margin: 0 auto;*/
     padding: 15px 0 0 0;
     position: relative;
     height: 700px; 
@@ -1701,6 +1702,12 @@ nav.active{
 .welcome-area{
  left:20px;
      
+}
+.explore-right{
+  margin: 0 auto;
+}
+.explore-group {
+  margin: 0 auto;
 }
 .none1024 {
   display: block;
