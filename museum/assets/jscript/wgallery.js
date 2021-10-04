@@ -36,12 +36,12 @@ wSliderItem.addEventListener("transitionend",function(){
 });
 
 function changeSlide(direction){
-console.log('left!');
+//console.log('left!');
 //containerWelcome.classList.remove('vcontrols_active');
 let slideWidth=parseInt(window.getComputedStyle(elW).width);
 //let slideWidth=1000;
 
-console.log('w=',slideWidth);
+//console.log('w=',slideWidth);
 if(direction==='left'){
     slideIndex++;
 }else if(direction==='right'){

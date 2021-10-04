@@ -6,14 +6,14 @@ const btnVolume=document.querySelector('.progress-small');
 
 let setVideoProgress =  function (){
 let value=this.value;
-console.log('v=',value);
+//console.log('v=',value);
 this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`;
 //document.documentElement.style.setProperty('--progress-position', (value) + '%');
 }
 //let setVolume = (value) => document.documentElement.style.setProperty('--volume-position', (value) + '%')
 let setVolume =  function (){
   let value=this.value;
-  console.log('v=',value);
+ // console.log('v=',value);
   this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`;
   //document.documentElement.style.setProperty('--progress-position', (value) + '%');
   }

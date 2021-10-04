@@ -1,7 +1,7 @@
 
 function initComparisons() {
     var x, i;
-    console.log('init');
+    //console.log('init');
     /*find all elements with an "overlay" class:*/
     x = document.getElementsByClassName("img-comp-overlay");
     for (i = 0; i < x.length; i++) {
@@ -10,14 +10,14 @@ function initComparisons() {
       compareImages(x[i]);
     }
     function compareImages(img) {
-        console.log('img=',img);
+      //  console.log('img=',img);
       var slider, img, clicked = 0, w, h;
       /*get the width and height of the img element*/
       w = img.offsetWidth;
       h = img.offsetHeight;
       /*set the width of the img element to 50%:*/
       img.style.width = 77+(w / 2) + "px";
-      console.log('w=', img.style.width);
+      //console.log('w=', img.style.width);
       /*create slider:*/
       slider = document.createElement("DIV");
       slider.setAttribute("class", "img-comp-slider");
@@ -27,7 +27,7 @@ function initComparisons() {
       //slider.style.top = '0px'; //(h / 2) - (slider.offsetHeight / 2) + "px";
       //slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
       slider.style.left=77+(w / 2) - (slider.offsetWidth / 2) + "px";
-      console.log('slider.style.top=',slider.style.top, '  slider.style.left=',slider.style.left);
+      //console.log('slider.style.top=',slider.style.top, '  slider.style.left=',slider.style.left);
       /*execute a function when the mouse button is pressed:*/
       slider.addEventListener("mousedown", slideReady);
       /*and another function when the mouse button is released:*/
