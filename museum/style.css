@@ -1812,14 +1812,14 @@ header nav ul a {
    width: 700px;
    min-height: 525px; 
    
-   background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/1.jpg);
+   /*background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/1.jpg);*/
  }
 .slider2{
   
   flex-shrink: 0;
    width: 700px;
    min-height: 525px; 
-   background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/2.jpg);
+ /*  background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/2.jpg);*/
  }
 
  .slider3{
@@ -1827,21 +1827,21 @@ header nav ul a {
   flex-shrink: 0;
    width: 700px;
    min-height: 525px; 
-   background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/3.jpg);
+   /*background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/3.jpg);*/
  }
  .slider4{
   
   flex-shrink: 0;
    width: 700px;
    min-height: 525px; 
-   background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/4.jpg);
+   /*background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/4.jpg);*/
  }
  .slider5{
   
   flex-shrink: 0;
    width: 700px;
    min-height: 525px; 
-   background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/5.jpg);
+   /*background-image: linear-gradient(to right, black 1%, transparent 100%), url(./assets/img/5.jpg);*/
  }
  .welcome-area{
   position: absolute;
