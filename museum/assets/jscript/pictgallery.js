@@ -16,7 +16,7 @@ let im=` <img class="gallery-img" src="assets/img/galery/galery${initArr[i]}.jpg
 arrPict[i]=im;
   
 }
-//console.log('img=',img);
+console.log('img=',img);
 img=arrPict.join("");
 
 pictureInnerContainer.innerHTML = img;

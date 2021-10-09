@@ -190,10 +190,10 @@
           </div>
           <div class="explore-right">
             <div class="explore-compare ">
-                <img src="assets/img/after.jpg" width="720" height="700" alt="Las Meninas">
+                <img src="./assets/img/after.jpg" width="720" height="700" alt="Las Meninas">
             </div>
              <div class="explore-compare img-comp-overlay">
-                <img src="assets/img/before.jpg" width="720" height="700" alt="Las Meninas">
+                <img src="./assets/img/before.jpg" width="720" height="700" alt="Las Meninas">
             </div>
       
         
@@ -216,20 +216,20 @@
     
             </div>
 
-            <div class="vposter">
-
+            <!--<div class="viewer vposter">-->
+                <video   class="vposter vscreen_video viewer"   src="./assets/video/video1.mp4" preload="auto" poster="./assets/img/vposter1.jpg">
               <!-- <div class="btn-play">-->
                <button class="btn-play"></button>   
-
+              </video>
                
-            </div>
+            <!--</div>-->
             <div class="vcontrols">
                 <!--<button class="btn-rewind-prev btn-control"></button>-->
                 <button class="btn-play-small btn-control"></button>
                 <!--<button class="btn-rewind-next btn-control"></button> onchange="setVideoProgress(this.value)"-->
-                <div><input type=range min="0" max="100" class="progress" value="54"></div>
+                <div><input type=range min="0" max="1000" class="progress" value="0"></div>
                 <button class="btn-volume btn-control"></button>
-                <div><input type=range min="0" max="100"  class="progress-small " value="41"></div>
+                <div><input type=range min="0" max="1000"  class="progress-small " value="41"></div>
                 <button class="btn-fullscr btn-control"></button>
             </div>
 
