@@ -28,4 +28,6 @@ const marker5 = new mapboxgl.Marker({ color: 'grey', rotation: 0 })
 .setLngLat([2.3365, 48.8625])
 .addTo(map);
 
+map.addControl(new mapboxgl.NavigationControl());
+
 export default map;
