@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -216,8 +218,10 @@
     
             </div>
 
-            <!--<div class="viewer vposter">-->
-                <video   class="vposter vscreen_video viewer"   src="./assets/video/video1.mp4" preload="auto" poster="./assets/img/vposter1.jpg">
+            <div class="video-container">
+                <iframe  src="https://www.youtube.com/embed/zp1BXPX8jcU" class=" vposter vscreen_video viewer" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                
+               <!-- <video   class="vposter vscreen_video viewer"   src="./assets/video/video1.mp4" preload="auto" poster="./assets/img/vposter1.jpg">-->
               <!-- <div class="btn-play">-->
                <button class="btn-play"></button>   
               </video>
@@ -230,9 +234,9 @@
                 <div><input type=range min="0" max="1000" class="progress" value="0"></div>
                 <button class="btn-volume btn-control" id="btn-volume"></button>
                 <div><input type=range min="0" max="1"  class="progress-small " value="0.4" step="0.1"></div>
-                <button class="btn-fullscr btn-control "></button>
+                <button class="btn-fullscr btn-control" id="btn-fullscr"></button>
             </div>
-
+           </div>
             <div class="v-youtube">
              <div class="v-item">
                <!--<img src="./assets/img/poster1.png" alt="poster1">  -->
@@ -455,7 +459,8 @@
             <a href="mailto:info@louvre.fr" class="br-span ahref">mail: info@louvre.fr</a>
             </p>
          </div>
-         <img src="assets/img/map.png" alt="Map" class="map"> 
+         <!--<img src="assets/img/map.png" alt="Map" class="map"> -->
+         <div id="map" class="map"></div>
         </div>
         </div>   
         </section>

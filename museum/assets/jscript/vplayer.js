@@ -1,6 +1,6 @@
 const btnScale=document.querySelector('.progress');
 const btnVolume=document.querySelector('.progress-small');
-const btnFull=document.querySelector('.btn-fullscr');
+const btnFull=document.querySelector('#btn-fullscr');
 const btnPlay=document.querySelector('.btn-play');
 const btnPlaySmall=document.querySelector('#btn-play-small');
 const btnMute=document.querySelector('#btn-volume');
@@ -9,7 +9,7 @@ const MAX_DURATION=1000;
 
 let videoArr=["/assets/video/video1.mp4","/assets/video/video2.mp4","/assets/video/video3.mp4","/assets/video/video4.mp4"];
 const video = document.querySelector('.viewer');
-//const videoContainer=document.querySelector('.video-container');
+const videoContainer=document.querySelector('.video-container');
 let videoScr=0;
 
 function playPause() {
@@ -52,13 +52,14 @@ function toggleFullScr() {
   
   if (!document.fullscreenElement) {
       videoContainer.requestFullscreen();
+      btnFull.classList.remove('btn-fullscr');
       btnFull.classList.add('btn-exit');
     
   } else {
     if (document.exitFullscreen) {
       document.exitFullscreen();
       btnFull.classList.remove('btn-exit');
-      
+      btnFull.classList.add('btn-fullscr');
     }
   }
 }
@@ -94,7 +95,45 @@ function videoEnd(){
   btnPlaySmall.classList.remove('pause');
 }
 
+let keyPress = (evt) => {
+  evt.preventDefault()
+  if (evt.code === 'Space') playPause();
+  if (evt.code === 'KeyM') muteChange();
+  if (evt.code === 'KeyF') toggleFullScr();
+  
+  if (evt.code === 'ArrowRight') {
+    video.currentTime += 10;
+  };
+  if (evt.code === 'ArrowLeft') {
+    video.currentTime -= 10;
+  };
+  //console.log();
+  if (evt.key === 'P' || (evt.key === 'Shift' && evt.key === 'p')) {
+   // prevVideo();
+  };
+  if (evt.key === 'N' || (evt.key === 'Shift' && evt.key === 'n')) {
+   // nextVideo();
+  };
+  
+}
 
+let onActive = () => {
+  vcontrols.classList.add('vcontrols_active');
+  if(video.paused===true){
+  btnPlay.classList.add('btn-play_active');
+  }
+  videoContainer.removeEventListener('mousemove', onActive);
+  videoContainer.removeEventListener('touchmove', onActive);
+  setTimeout(offActive, 3000);
+}
+let offActive = () => {
+  vcontrols.classList.remove('vcontrols_active');
+
+  btnPlay.classList.remove('btn-play_active');
+
+  videoContainer.addEventListener('mousemove', onActive);
+  videoContainer.addEventListener('touchmove', onActive);
+}
 
 
 /*let setVideoProgress =  function (){
@@ -119,9 +158,9 @@ btnPlaySmall.addEventListener('click',playPause);
   
   btnMute.addEventListener('click',muteChange);
   btnFull.addEventListener('click', toggleFullScr);
-  //document.addEventListener('keydown', keyPress);
-  //videoContainer.addEventListener('mousemove', onActive);
-  //videoContainer.addEventListener('touchmove', onActive);
+  document.addEventListener('keydown', keyPress);
+  videoContainer.addEventListener('mousemove', onActive);
+  videoContainer.addEventListener('touchmove', onActive);
   //window.addEventListener('onfullscreenchange',onfullscreenchange);
 
 export default videoProgress;

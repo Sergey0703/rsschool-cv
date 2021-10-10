@@ -724,7 +724,11 @@ letter-spacing: 5px;
     width: 40px;
     height: 36px; 
 }
-
+.btn-exit{
+  background-image: url(./assets/img/btn-exit.svg);
+  width: 40px;
+  height: 36px; 
+}
 .v-youtube{
   margin-top: 40px;
   display: flex;
@@ -1685,6 +1689,10 @@ nav.active{
   /*display: block;*/
   z-index: 0;    
  }
+ .map{
+  width: 960px;
+  height: 620px;
+}
 /************************************************************/
 @media (max-width: 1440px) {
   .container-welcome{

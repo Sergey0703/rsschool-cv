@@ -3,6 +3,7 @@ import changeSlide from './wgallery.js';
 import pictGallery from './pictgallery.js';
 import initBooking from './book_ticket.js';
 import setVideoProgress from './vplayer.js';
+import map from './map.js';
 
 //setVideoProgress(50);
 pictGallery();
