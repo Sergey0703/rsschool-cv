@@ -2,7 +2,7 @@ const btnScale=document.querySelector('.progress');
 const btnVolume=document.querySelector('.progress-small');
 const btnFull=document.querySelector('.btn-fullscr');
 const btnPlay=document.querySelector('.btn-play');
-const btnPlaySmall=document.querySelector('.btn-play-small');
+const btnPlaySmall=document.querySelector('#btn-play-small');
 const btnMute=document.querySelector('.btn-volume');
 
 const MAX_DURATION=1000;
@@ -65,6 +65,7 @@ function scaleChange(){
 
 let videoProgress = () => {
   btnScale.value = Math.round(video.currentTime / video.duration * MAX_DURATION);
+  btnScale.style.background = `linear-gradient(to right, #710707 0%, #710707 ${btnScale.value/10}%, #C4C4C4 ${btnScale.value/10}%, #C4C4C4 100%)`;
   //console.log('btnScale.value=',btnScale.value)
   //if(btnScale.value==MAX_DURATION){
    //   btnPlaySmall.classList.remove('pause');

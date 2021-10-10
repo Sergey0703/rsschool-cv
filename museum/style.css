@@ -641,7 +641,7 @@ letter-spacing: 5px;
 }
 .progress {
    /* background: linear-gradient(to right, #24809E 0%, #24809E 45%, #fff 40%, #fff 100%);*/
-    background: linear-gradient(to right, #710707 0%, #710707 54%, #fff 40%, #fff 100%);
+  /*  background: linear-gradient(to right, #710707 0%, #710707 54%, #fff 40%, #fff 100%);*/
     
    /* border: solid 0px #24809E;
     border-radius: 4px; */
@@ -698,7 +698,13 @@ letter-spacing: 5px;
     width: 26px;
     height: 31px; 
 }
-
+.pause{
+  background-image: url(./assets/img/pause.svg) ;
+}
+.btn-mute{
+  background-image: url(./assets/img/mute__icon.svg);
+ 
+}
 .btn-rewind-next{
     background-image: url(./assets/img/btn-rewind-next.svg);
 }
