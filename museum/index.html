@@ -312,15 +312,15 @@
                   <div class="tickets-radio none1024">
                     <h3 class="ticket-head">Ticket Type</h3>
                     <label class="radio-container">Permanent exhibition
-                        <input type="radio" checked="checked" name="radio">
+                        <input type="radio" checked="checked" name="radio" value=20 id="radio">
                         <span class="checkmark"></span>
                       </label>
                       <label class="radio-container">Temporary exhibition
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value=25>
                         <span class="checkmark"></span>
                       </label>
                       <label class="radio-container">Combined Admission
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value=40>
                         <span class="checkmark"></span>
                       </label>
 
@@ -331,18 +331,18 @@
                     <h3 class="amount-head">Amount</h3>
                     <div class="amount-head-small1">Basic 18+</div>
                     <div class="amount-buttons">
-                    <button onclick="this.nextElementSibling.stepDown()" class="btn-amount">&ndash;</button>
-                    <input type="number" value="1" min="0" max="20" readonly name="input1" class="amount-input">
-                    <button onclick="this.previousElementSibling.stepUp()" class="btn-amount">+</button> 
+                    <button id="btn-amount-down1"  class="btn-amount">&ndash;</button>
+                    <input type="number" value="1" min="0" max="20" readonly name="input1" id="input1" class="amount-input">
+                    <button id="btn-amount-up1"  class="btn-amount">+</button> 
                     </div>
                     <div class="amount-head-small2">Senior 65+</div>
                     <div class="amount-buttons">
-                        <button onclick="this.nextElementSibling.stepDown()" class="btn-amount">&ndash;</button>
-                        <input type="number" value="1" min="0" max="20" readonly name="input2" class="amount-input">
-                        <button onclick="this.previousElementSibling.stepUp()" class="btn-amount">+</button> 
+                        <button id="btn-amount-down2" class="btn-amount">&ndash;</button>
+                        <input type="number" value="1" min="0" max="20" readonly name="input2" id="input2" class="amount-input">
+                        <button id="btn-amount-up2" class="btn-amount">+</button> 
                     </div>
                     <div class="amount-total">
-                    Total €<span class="sum220">220</span>
+                    Total €<span class="sum220" id="sumT">0</span>
                     </div>
                     <button class="btn-amount-total">
                         Buy Now

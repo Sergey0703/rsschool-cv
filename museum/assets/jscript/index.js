@@ -1,13 +1,14 @@
 import initComparisons from './comparisons.js';
 import changeSlide from './wgallery.js';
 import pictGallery from './pictgallery.js';
-import initBooking from './book_ticket.js';
+import initBooking, {priceT} from './book_ticket.js';
 import setVideoProgress from './vplayer.js';
 import map from './map.js';
 
 //setVideoProgress(50);
 pictGallery();
 initComparisons();
+priceT();
 /*console.log(`1)Вёрстка соответствует макету. Ширина экрана 1024px +40`);
 console.log(`2)Вёрстка соответствует макету. Ширина экрана 768px +40`);
 console.log(`3)Вёрстка соответствует макету. Ширина экрана 320px +40`);
