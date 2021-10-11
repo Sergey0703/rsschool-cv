@@ -32,6 +32,7 @@ ol, ul {
   max-width: 1440px; 
     margin: 0 auto;
     padding: 75px 0px;
+    z-index: 10;
 }
 
 .dark-section{
@@ -476,6 +477,7 @@ letter-spacing: 5px;
    /***************************************************************************/
    .explore{
     background-color: #000000;
+    z-index: 8;
    }
    .explore-text-head{
     font-family: Forum;
@@ -587,16 +589,46 @@ letter-spacing: 5px;
   line-height: 1.7;
 } 
 
+.video-container{
+  margin: 80px 0 0 0;     
+  /*object-fit: cover;*/
+  width: 1440px;
+  height: 735px;
+  /*display: flex;
+  flex-direction: row;
+  box-sizing: border-box;*/
+  /*height: 810px;*/
+  /*background-image: url(./assets/img/vposter0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+   
+ }
   .vposter{
-   margin: 80px 0 0 0;     
-   display: flex;
-   justify-content: center;
-   align-items:center;
-   width: 1440px;
-   height: 650px;
-   background-image: url(./assets/img/vposter.jpg);
+   /*margin: 80px 0 0 0;     */
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   /*height: 650px;*/
+   /*height: 810px;*/
+   background-image: url(./assets/img/vposter0.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
     
   }
+  .vscreen_video{
+    /*object-fit: cover;*/
+    width: 100%;
+    /*height: calc(100%-85px);*/
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+  }
+  .vscreen_video_full{
+     height: 90%;
+  }
+
   .btn-play{
    background-image: url(./assets/img/pgroup.svg);
    width: 220px;
@@ -604,7 +636,15 @@ letter-spacing: 5px;
    cursor: pointer;
    background-color: unset;
    border-width: 0;
+   position: absolute;
+    top: -1000px;
+    transition: 0.5s;
+    z-index: -1;
   }
+  .btn-play-active {
+    top: 30%;
+    z-index: 1;
+}
   /*.btn-play:hover {
     color: #9D8665;
   } */
@@ -750,12 +790,7 @@ display: flex;
 justify-content: space-between;
 margin-top: 40px;
 }
-.v-small-contrl-f{
-  width: 12px;
-  height: 12px;
-  background-color: #000000;
-  border-radius: 50%;
-}
+
 
 .v-small-contrl{
   width: 12px;
@@ -764,6 +799,12 @@ margin-top: 40px;
   border-radius: 50%;
 }
 
+.v-small-contrl-f{
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  border-radius: 50%;
+}
 .v-small-contrl-f:hover{
   background-color: #710707;
   }
@@ -1712,6 +1753,7 @@ nav.active{
   max-width: 1440px; 
   margin: 0 auto;
   padding: 75px 20px;
+  z-index: 10;
 }
 .header-container{
   max-width: 1440px; 

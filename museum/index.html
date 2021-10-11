@@ -219,14 +219,13 @@
             </div>
 
             <div class="video-container">
-                <iframe  src="https://www.youtube.com/embed/zp1BXPX8jcU" class=" vposter vscreen_video viewer" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                
-               <!-- <video   class="vposter vscreen_video viewer"   src="./assets/video/video1.mp4" preload="auto" poster="./assets/img/vposter1.jpg">-->
-              <!-- <div class="btn-play">-->
-               <button class="btn-play"></button>   
-              </video>
+                <div class="vscreen_video">
+               <video   class="vposter viewer"   preload="auto" >
+              <!-- <div class="btn-play">  src="./assets/video/video0.mp4" poster="./assets/img/vposter0.jpg"-->
+               </video>
+              <button class="btn-play btn-play-active"></button>  
                
-            <!--</div>-->
+            </div>
             <div class="vcontrols">
                 <!--<button class="btn-rewind-prev btn-control"></button>-->
                 <button class="btn-play-small btn-control" id="btn-play-small"></button>
@@ -236,6 +235,7 @@
                 <div><input type=range min="0" max="1"  class="progress-small " value="0.4" step="0.1"></div>
                 <button class="btn-fullscr btn-control" id="btn-fullscr"></button>
             </div>
+            
            </div>
             <div class="v-youtube">
              <div class="v-item">
@@ -256,12 +256,12 @@
             <div>
                 <div class="v-small-controls">
                   <button class="v-lstroke"></button>
-                  <div class="v-small-contrl-f"></div>
-                  <div class="v-small-contrl"></div>
-                  <div class="v-small-contrl"></div>
-                  <div class="v-small-contrl"></div>
-                  <div class="v-small-contrl"></div>
-                  <button class="v-rstroke"></button>
+                  <div class="v-small-contrl v-small-contrl-f" id="v-small-c1"></div>
+                  <div class="v-small-contrl" id="v-small-c2"></div>
+                  <div class="v-small-contrl" id="v-small-c3"></div>
+                  <div class="v-small-contrl" id="v-small-c4"></div>
+                  <div class="v-small-contrl" id="v-small-c5"></div>
+                  <button class="v-rstroke" ></button>
                 </div>
             </div>
          
