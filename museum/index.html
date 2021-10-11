@@ -342,7 +342,7 @@
                         <button id="btn-amount-up2" class="btn-amount">+</button> 
                     </div>
                     <div class="amount-total">
-                    Total €<span class="sum220" id="sumT">0</span>
+                    Total <span class="sum220" id="sumT"></span>
                     </div>
                     <button class="btn-amount-total">
                         Buy Now
@@ -374,9 +374,10 @@
                         <div><input type="email" class="bookEmail"></div>
                         <div><input type="tel" class="bookPhone"></div>
                         <div>
-                            <select class="bookTicketType">
-                                   <option value="1">Type1</option>
-                                   <option value="2">Type2</option>
+                            <select class="bookTicketType" id="bookTicketType">
+                                   <option value="20">Permanent exhibition</option>
+                                   <option value="25">Temporary exhibition</option>
+                                   <option value="40">Combined Admission</option>
                             </select>
                         
                         </div>
@@ -385,17 +386,17 @@
                          <div class="entry1">
                          <div class="entry-down">Basic 18+ (20 €)</div> 
                             <div class="b-amount-buttons">
-                            <button onclick="this.nextElementSibling.stepDown()" class="b-btn-amount">&ndash;</button>
-                            <input type="number" value="1" min="0" max="20" readonly name="binput1" class="b-amount-input">
-                            <button onclick="this.previousElementSibling.stepUp()" class="b-btn-amount">+</button> 
+                            <button type="button" class="b-btn-amount" id="b-btn-amount-down1">&ndash;</button>
+                            <input type="number" value="1" min="0" max="20" readonly name="binput1" id="binput1" class="b-amount-input">
+                            <button type="button" class="b-btn-amount" id="b-btn-amount-up1">+</button> 
                             </div>
                           </div>  
                           <div class="entry2">
                          <div class="entry-down">Senior 65+ (10 €)</div> 
                             <div class="b-amount-buttons">
-                            <button onclick="this.nextElementSibling.stepDown()" class="b-btn-amount">&ndash;</button>
-                            <input type="number" value="1" min="0" max="20" readonly name="binput2" class="b-amount-input">
-                            <button onclick="this.previousElementSibling.stepUp()" class="b-btn-amount">+</button> 
+                            <button type="button" class="b-btn-amount" id="b-btn-amount-down2">&ndash;</button>
+                            <input type="number" value="1" min="0" max="20" readonly name="binput2" id="binput2" class="b-amount-input">
+                            <button  type="button" class="b-btn-amount" id="b-btn-amount-up2">+</button> 
                             </div>
                         </div>
                         </div>
@@ -412,9 +413,9 @@
                               <li class="book-r-e">Temporary exhibition</li>
                               </ul>
                                <div class="book-r-total">
-                               <div class="book-r-total-row"><span class="row-span">Basic (20 €)</span><span>40 €</span></div>
-                               <div class="book-r-total-row"><span class="row-span">Senior (10 €)</span><span>20 €</span></div>
-                               <div class="book-r-total-row row-total"> <span>Total:</span><span>60 €</span></div>
+                               <div class="book-r-total-row"><span class="row-span" id="row-span1">Basic (20 €)</span><span id="sumTb1">40 </span></div>
+                               <div class="book-r-total-row"><span class="row-span">Senior (10 €)</span><span id="sumTb2">20 </span></div>
+                               <div class="book-r-total-row row-total"> <span>Total:</span><span id="sumTb">60 </span></div>
                                </div>
                                 <div class="payment-block">
                                     <div class="card1">
