@@ -56,16 +56,16 @@ wSliderItem.addEventListener("swipe", function() {
 
 wSliderItem.addEventListener("transitionend",function(){
     let slideWidth=parseInt(window.getComputedStyle(elW).width); 
-    console.log('transitioned=',slideIndex);
+   // console.log('transitioned=',slideIndex);
     wSliderItem.style.transition=`none`;
 
     if(slideIndex===slidesCount+1){
       slideIndex=1;
-      console.log('slideIndex=1');
+   //   console.log('slideIndex=1');
      }
     if (slideIndex===0){
         slideIndex=slidesCount;
-        console.log('slideIndex=slidesCount-1');
+       // console.log('slideIndex=slidesCount-1');
        // wSliderItem.style.transform=`translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
     }
            
@@ -77,7 +77,7 @@ wSliderItem.addEventListener("transitionend",function(){
      let wQuad=`quad${slideIndex}`;
 //      console.log('w=',wQuad);
     // window[wQuad].classList.add('quad-g');
-     console.log('str=',-slideIndex * slideWidth);
+   //  console.log('str=',-slideIndex * slideWidth);
       setTimeout(tick, 200);
     
       //  mainSlide.style.transform=`translateY(-${height*activeSlideIndex}px)`;
@@ -93,7 +93,7 @@ if(ind===slideIndex) return;
 let slideWidth=parseInt(window.getComputedStyle(elW).width);
 //let slideWidth=1000;
 
-console.log('ind=',slideIndex);
+//console.log('ind=',slideIndex);
 
 //window[`quad${oldInd}`].classList.remove('quad-g');
 /*let oldInd=0;
@@ -117,9 +117,9 @@ if(direction==='left'){
 }
 
 
-console.log('index=',slideIndex);
+//console.log('index=',slideIndex);
 let qIndex=0; //slideIndex===0?slidesCount:slideIndex;
-console.log('qIndex=',qIndex);
+//console.log('qIndex=',qIndex);
  //   qIndex=slideIndex===-1?slidesCount:slideIndex;
  if(slideIndex>slidesCount){
   qIndex=1;
@@ -145,7 +145,7 @@ wCounter.innerHTML=`<span class="w-counter">0${qIndex}</span> <span>|</span> <sp
   wSliderItem.style.transform = `translate3d(${slideWidth}px, 0px, 0px)`; 
 }else{
   */
-  console.log('=>');
+ // console.log('=>');
   //mainSlide.style.transition=`transform 0.5s ease-in-out`;
   //mainSlide.style.transform=`translateY(-${height*activeSlideIndex}px)`; 
     wSliderItem.style.transition = 'transform .3s';
