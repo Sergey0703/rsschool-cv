@@ -26,12 +26,12 @@ async function getWeather(){
     if (res.ok) {
     const data=await res.json();
     weatherError.textContent='';
-    console.log('d0=',data.weather[0].id, ' =',data.weather[0].description,' =',data.main.temp,' data.weather[0]=',data.weather[0]) ;
+    //console.log('d0=',data.weather[0].id, ' =',data.weather[0].description,' =',data.main.temp,' data.weather[0]=',data.weather[0]) ;
     weatherIcon.className = 'weather-icon owf';
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-    temperature.textContent=`${data.main.temp}°C`;
-    humidity.textContent=`Humidity: ${data.main.humidity}%`;
-    wind.textContent=`Wind speed: ${data.wind.speed} m/s`;
+    temperature.textContent=`${Math.floor(data.main.temp)}°C`;
+    humidity.textContent=`Humidity: ${Math.floor(data.main.humidity)}%`;
+    wind.textContent=`Wind speed: ${Math.floor(data.wind.speed)} m/s`;
     weatherDescription.textContent=data.weather[0].description;//data.weather[0].description;
     }else{
        // console.log(res.status);
