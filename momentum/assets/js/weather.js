@@ -11,11 +11,15 @@ let cityInput=document.querySelector('.city');
 
 async function getWeather(){
    
-    console.log('city=',cityInput.value);
+    //console.log('city');
     if(cityInput.value!==''){
       city=cityInput.value;  
     }else{
+        if(localStorage.getItem('city')) {
+            cityInput.value = localStorage.getItem('city');
+          }else{
         cityInput.value=city;
+          }
     }
     const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=fda64f590dc732d29e589668fab412c5&units=metric`;
     const res = await fetch(url);
@@ -41,6 +45,20 @@ async function getWeather(){
     weatherDescription.textContent='';
     }
 }
+
+function setLocalStorageCity() {
+    localStorage.setItem('city', cityInput.value);
+  }
+window.addEventListener('beforeunload', setLocalStorageCity);
+
+//function getLocalStorageCity() {
+   // console.log('getLocalSt');
+  //  if(localStorage.getItem('city')) {
+  //    cityInput.value = localStorage.getItem('city');
+  //  }
+ // }
+ // window.addEventListener('load', getLocalStorageCity)
+
 getWeather();
 
 cityInput.addEventListener('change',getWeather);

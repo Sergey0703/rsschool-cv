@@ -6,16 +6,16 @@ let name=document.querySelector('.name');
 
 let getTimeOfDay=(x)=>{
 switch (true){
-    case (0<=x )&& (x<4) :
+    case (0<=x )&& (x<6) :
     return 'night';
     break;
-    case (4<=x) && (x <12):
+    case (6<=x) && (x <12):
     return 'morning';
     break;
-    case (16<=x)&&(x<24):   
+    case (18<=x)&&(x<24):   
     return 'evening';
     break;
-    case (12<=x) && (x<16):
+    case (12<=x) && (x<18):
     return 'afternoon';
     break;
 }  
