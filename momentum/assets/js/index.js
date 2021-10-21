@@ -1,4 +1,6 @@
 import setBg from './slider.js';
-import time from './datetime.js';
+import showTime from './datetime.js';
+import {showGreeting} from './greeting.js';
+import getWeather from './weather.js';
 
 setBg();

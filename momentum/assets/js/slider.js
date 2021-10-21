@@ -1,4 +1,4 @@
-import timeOfDay from "./greeting.js";
+import {timeOfDay} from "./greeting.js";
 
 let randomNum;
 const body=document.querySelector('body');

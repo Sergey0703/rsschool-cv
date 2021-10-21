@@ -1,3 +1,4 @@
+import {showGreeting} from './greeting.js';
 const time=document.querySelector('.time');
 const date=document.querySelector('.date');
 
@@ -13,10 +14,11 @@ function showTime(){
     const date=new Date();
     const currentTime=date.toLocaleTimeString();
     time.textContent=currentTime;
-    console.log('show=',currentTime);
+   // console.log('show=',currentTime);
+    showGreeting();
     showDate();
     setTimeout(showTime,1000);
 }
 
 showTime();
-export default time;
+export default showTime;

@@ -1,10 +1,10 @@
 const date=new Date();
 let hours=date.getHours();
+const greetingPlace=document.querySelector('.greeting');
 let timeOfDay;
-
+let name=document.querySelector('.name');
 
 let getTimeOfDay=(x)=>{
-    
 switch (true){
     case (0<=x )&& (x<4) :
     return 'night';
@@ -16,12 +16,28 @@ switch (true){
     return 'evening';
     break;
     case (12<=x) && (x<16):
-    return 'day';
+    return 'afternoon';
     break;
-    
-    
 }  
 } 
 timeOfDay=getTimeOfDay(hours);
-console.log('t=',timeOfDay);
-export default timeOfDay;
+
+function showGreeting(){
+ const greetingText = `Good ${getTimeOfDay(hours)} ,`;
+greetingPlace.textContent=greetingText;
+}
+function setLocalStorage() {
+    localStorage.setItem('name', name.value);
+  }
+window.addEventListener('beforeunload', setLocalStorage);
+function getLocalStorage() {
+    if(localStorage.getItem('name')) {
+      name.value = localStorage.getItem('name');
+    }
+  }
+  window.addEventListener('load', getLocalStorage)
+
+
+export {showGreeting, timeOfDay};
+//export timeOfDay;
+//export showGreeting;
