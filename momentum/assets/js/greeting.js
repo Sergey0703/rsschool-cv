@@ -38,6 +38,6 @@ function getLocalStorage() {
   window.addEventListener('load', getLocalStorage)
 
 
-export {showGreeting, timeOfDay};
+export {showGreeting, timeOfDay,hours};
 //export timeOfDay;
 //export showGreeting;

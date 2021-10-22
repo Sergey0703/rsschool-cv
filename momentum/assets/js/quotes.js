@@ -1,4 +1,4 @@
-import getRandom from "./slider.js";
+import {getRandom} from "./slider.js";
 
 const quotePlace=document.querySelector('.quote');
 const authorPlace=document.querySelector('.author');
