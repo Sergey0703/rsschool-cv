@@ -1,10 +1,12 @@
-const date=new Date();
-let hours=date.getHours();
+
+
 const greetingPlace=document.querySelector('.greeting');
 let timeOfDay;
 let name=document.querySelector('.name');
 
-let getTimeOfDay=(x)=>{
+let getTimeOfDay=()=>{
+  let date=new Date();
+  let x=date.getHours();
 switch (true){
     case (0<=x )&& (x<6) :
     return 'night';
@@ -20,10 +22,10 @@ switch (true){
     break;
 }  
 } 
-timeOfDay=getTimeOfDay(hours);
+timeOfDay=getTimeOfDay();
 
 function showGreeting(){
- const greetingText = `Good ${getTimeOfDay(hours)} ,`;
+ const greetingText = `Good ${getTimeOfDay()} ,`;
 greetingPlace.textContent=greetingText;
 }
 function setLocalStorage() {
@@ -38,6 +40,6 @@ function getLocalStorage() {
   window.addEventListener('load', getLocalStorage)
 
 
-export {showGreeting, timeOfDay,hours};
+export {showGreeting, timeOfDay, getTimeOfDay};
 //export timeOfDay;
 //export showGreeting;

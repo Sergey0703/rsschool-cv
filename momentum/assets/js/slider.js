@@ -1,10 +1,10 @@
-import {timeOfDay} from "./greeting.js";
+import {timeOfDay,getTimeOfDay} from "./greeting.js";
 
 let randomNum;
 const body=document.querySelector('body');
 const prevBtn=document.querySelector('.slide-prev');
 const nextBtn=document.querySelector('.slide-next');
-//console.log(timeOfDay);
+console.log('tt=',getTimeOfDay());
 
 function getRandom(min, max) {
     min = Math.ceil(min);
@@ -32,7 +32,7 @@ async function setBg(option) {
     const img = new Image();
     console.log('opt=',option);
     if (option==='slider'){
-    img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timeOfDay}/${String(randomNum).padStart(2, "0")}.jpg`;
+    img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${getTimeOfDay()}/${String(randomNum).padStart(2, "0")}.jpg`;
     }else if(option==='unsplash'){
         const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=D_7YNYfiG-mfgYe7FBSkQM5ImcOGy9uoGbHCHZIBwdk`;
         const res = await fetch(url);
