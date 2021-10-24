@@ -105,7 +105,7 @@ body {
   cursor: pointer;
   transition: .3s;  
 }
-
+.mute-volume:hover,
 .player-icon:hover,
 .slider-icon:hover,
 .change-quote:hover {
@@ -183,6 +183,7 @@ body {
 }
 .mute-volume{
   cursor: pointer;
+  opacity: .8;
 }
 .weather {
   display: flex;

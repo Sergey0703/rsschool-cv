@@ -29,29 +29,36 @@ playList.forEach(el=>{
 const audioBtn=document.querySelectorAll('.play-item');
 
 function playAudio(dist='null'){
+    console.log('v00=',audio.currentTime);
     if(dist!=='null'){
     let liCh = document.querySelector(`.play-list li:nth-child(${numAudio+1})`);
     console.log('l0=',liCh);
     liCh.classList.remove('item-active');
     }
+    console.log('v001=',audio.currentTime);
     if(dist==='next'){
         isPlay=false;
         numAudio++;
         if(numAudio>playList.length-1){
             numAudio=0;  
         }
+        audio.src=playList[numAudio].src;
+        audioName.textContent=playList[numAudio].title;
     } else if(dist==='prev'){
         isPlay=false;
         numAudio--;
         if(numAudio<0){
             numAudio=playList.length-1;  
         }
+        audio.src=playList[numAudio].src;
+        audioName.textContent=playList[numAudio].title;
      }
+
      console.log('numAudio=',numAudio);
-    audio.src=playList[numAudio].src;
-    audioName.textContent=playList[numAudio].title;
+   
 if(!isPlay){
     isPlay=true;
+   
    // audio.currentTime=0;
     audio.play();
     playBtn.classList.add('pause');
@@ -60,7 +67,9 @@ if(!isPlay){
     liCh.classList.add('item-active');
 }else{
      isPlay=false;
+     console.log('v0=',audio.currentTime);
      audio.pause(); 
+     console.log('v=',audio.currentTime);
      playBtn.classList.remove('pause'); 
 }
 }
