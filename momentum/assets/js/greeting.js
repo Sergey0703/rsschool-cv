@@ -1,8 +1,12 @@
 
-
+import {lang} from './tweak.js'
 const greetingPlace=document.querySelector('.greeting');
 let timeOfDay;
+let greetingText;
 let name=document.querySelector('.name');
+
+let arrTime={'night':'Доброй ночи','morning':'Доброе утро','evening':'Добрый вечер','afternoon':'Добрый день'};
+
 
 let getTimeOfDay=()=>{
   let date=new Date();
@@ -25,7 +29,11 @@ switch (true){
 timeOfDay=getTimeOfDay();
 
 function showGreeting(){
- const greetingText = `Good ${getTimeOfDay()} ,`;
+  if(lang==='en'){
+    greetingText = `Good ${getTimeOfDay()} ,`;
+  }else{
+    greetingText = `${arrTime[getTimeOfDay()]} ,`;
+  }
 greetingPlace.textContent=greetingText;
 }
 function setLocalStorage() {

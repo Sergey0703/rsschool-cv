@@ -1,3 +1,4 @@
+import {lang} from './tweak.js';
 const weatherIcon=document.querySelector('.weather-icon');
 const temperature=document.querySelector('.temperature');
 const weatherDescription=document.querySelector('.weather-description');
@@ -26,7 +27,7 @@ async function getWeather(){
           }
     }
     console.log('city=',city);
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=fda64f590dc732d29e589668fab412c5&units=metric`;
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=fda64f590dc732d29e589668fab412c5&units=metric`;
     const res = await fetch(url);
     if (res.ok) {
     const data=await res.json();
@@ -35,8 +36,8 @@ async function getWeather(){
     weatherIcon.className = 'weather-icon owf';
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
     temperature.textContent=`${Math.floor(data.main.temp)}°C`;
-    humidity.textContent=`Humidity: ${Math.floor(data.main.humidity)}%`;
-    wind.textContent=`Wind speed: ${Math.floor(data.wind.speed)} m/s`;
+    humidity.textContent=`${lang==='en'?'Humidity':'Влажность'}: ${Math.floor(data.main.humidity)}%`;
+    wind.textContent=`${lang==='en'?'Wind speed':'Скорость ветра'}: ${Math.floor(data.wind.speed)} m/s`;
     weatherDescription.textContent=data.weather[0].description;//data.weather[0].description;
     }else{
        // console.log(res.status);
@@ -64,7 +65,7 @@ window.addEventListener('beforeunload', setLocalStorageCity);
  // }
  // window.addEventListener('load', getLocalStorageCity)
 
-getWeather();
+
 
 cityInput.addEventListener('change',getWeather);
 export default getWeather;

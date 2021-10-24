@@ -315,7 +315,35 @@ body {
   height: 30vh;
   min-height: 160px;  
   padding: 20px;
+  position: relative;
 }
+
+.control-panel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 0;
+  height: 92px;
+  width: 92px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.choose-lang-ru{
+  width: 90px;
+  height: 64px;
+  background-size: 90px 64px;
+  background-image: url("../assets/img/ru.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-lang{
+    background-image: url("../assets/img/en.png");
+  }
 
 .change-quote {
   margin-bottom: 30px;
@@ -348,5 +376,14 @@ body {
   .name {
     font-size: 32px;
     padding: 5px;
+  }
+  .choose-lang-ru{
+    width: 45px;
+    height: 32px;
+    background-size: 45px 32px;
+    background-image: url("../assets/img/ru.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
