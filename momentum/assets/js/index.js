@@ -1,5 +1,5 @@
+import {chooseLang,lang,radioV} from './tweak.js';
 import {getRandom,setBg} from './slider.js';
-import {chooseLang,lang} from './tweak.js';
 import {showTime} from './datetime.js';
 import {showGreeting} from './greeting.js';
 
@@ -10,7 +10,7 @@ import playList from './playList.js';
 
 
 
-setBg('slider');
+setBg();
 
 showTime();
 getWeather();

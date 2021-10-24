@@ -184,6 +184,8 @@ body {
 .mute-volume{
   cursor: pointer;
   opacity: .8;
+ /* width: 30px;
+  height: 30px;*/
 }
 .weather {
   display: flex;
@@ -323,16 +325,88 @@ body {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  margin-right: 0;
+  /*margin-right: 0;*/
+  opacity: .8;
   height: 92px;
-  width: 92px;
+  width: 422px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   justify-content: center;
-  align-content: center;
+  align-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
+.radio{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+
+}
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  /*font-family: Roboto;*/
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+} 
+
+.radio-container .checkmark:after {
+ top: 2px;
+ left: 2px;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #000000;
+}
+
 .choose-lang-ru{
   width: 90px;
   height: 64px;
@@ -341,9 +415,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
 }
 .choose-lang{
     background-image: url("../assets/img/en.png");
+    color:black;
   }
 
 .change-quote {

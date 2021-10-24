@@ -1,10 +1,12 @@
 import {timeOfDay,getTimeOfDay} from "./greeting.js";
+import {radioV} from './tweak.js';
 
 let randomNum;
 const body=document.querySelector('body');
 const prevBtn=document.querySelector('.slide-prev');
 const nextBtn=document.querySelector('.slide-next');
-console.log('tt=',getTimeOfDay());
+//let radio=document.querySelector('#radio');
+//console.log('tt=',getTimeOfDay());
 
 function getRandom(min, max) {
     min = Math.ceil(min);
@@ -25,15 +27,15 @@ if(dist==='next'){
     if(randomNum<0) randomNum=20; 
 }
 //setBg('slider');
-setBg('unsplash');
+setBg();
 }
 
-async function setBg(option) {  
+async function setBg() {  
     const img = new Image();
-    console.log('opt=',option);
-    if (option==='slider'){
+    console.log('radio=',radioV);
+    if (radioV==='GitHub'){
     img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${getTimeOfDay()}/${String(randomNum).padStart(2, "0")}.jpg`;
-    }else if(option==='unsplash'){
+    }else if(radioV==='UnSplash'){
         const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=D_7YNYfiG-mfgYe7FBSkQM5ImcOGy9uoGbHCHZIBwdk`;
         const res = await fetch(url);
         const data=await res.json();
