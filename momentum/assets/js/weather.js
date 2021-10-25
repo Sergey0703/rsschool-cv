@@ -15,6 +15,7 @@ async function getWeather(){
     //console.log('city');
     if(cityInput.value!==''){
       city=cityInput.value; 
+      
       console.log('city1=',city); 
     }else{
         if(localStorage.getItem('city')) {
