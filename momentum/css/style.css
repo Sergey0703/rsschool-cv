@@ -491,7 +491,7 @@ body {
   width: 90px;
   height: 64px;
   background-size: 90px 64px;
-  background-image: url("../assets/img/ru.png");
+  background-image: url("../assets/img/Ru.png");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -499,7 +499,7 @@ body {
   font-weight: 700;
 }
 .choose-lang{
-    background-image: url("../assets/img/en.png");
+    background-image: url("../assets/img/En.png");
     color:black;
   }
 

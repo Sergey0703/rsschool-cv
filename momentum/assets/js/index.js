@@ -11,6 +11,8 @@ import playList from './playList.js';
 
 
 setBg();
-
+//chooseLang();
 showTime();
 getWeather();
+getQuotes();
+

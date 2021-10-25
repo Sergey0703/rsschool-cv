@@ -54,6 +54,7 @@ async function getWeather(){
 
 function setLocalStorageCity() {
     localStorage.setItem('city', cityInput.value);
+    
   }
 window.addEventListener('beforeunload', setLocalStorageCity);
 

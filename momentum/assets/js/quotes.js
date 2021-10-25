@@ -1,11 +1,12 @@
-import {getRandom} from "./slider.js";
+import {getRandom} from './slider.js';
+import {lang} from './tweak.js';
 
 const quotePlace=document.querySelector('.quote');
 const authorPlace=document.querySelector('.author');
 const changeQuote=document.querySelector('.change-quote');
 
 
-async function getQuotes(lang='en'){
+async function getQuotes(){
     let randomQuote=getRandom(0,3);
     const quotes='./data.json';
     const res= await fetch(quotes);
@@ -20,7 +21,7 @@ async function getQuotes(lang='en'){
     }
 
 }
-getQuotes();
+//getQuotes();
 changeQuote.addEventListener('click',getQuotes);
 
 export default getQuotes;
