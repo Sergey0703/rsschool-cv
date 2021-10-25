@@ -1,11 +1,12 @@
 import {timeOfDay,getTimeOfDay} from "./greeting.js";
-import {radioV} from './tweak.js';
+import {radioV,radioVplus} from './tweak.js';
 
 let randomNum;
 const body=document.querySelector('body');
 const prevBtn=document.querySelector('.slide-prev');
 const nextBtn=document.querySelector('.slide-next');
 let setBgIm=false;
+let searchOpt;
 //let radio=document.querySelector('#radio');
 //console.log('tt=',getTimeOfDay());
 
@@ -36,22 +37,32 @@ setBg();
 async function setBg() {  
     setBgIm=true;
     const img = new Image();
-    console.log('radio=',radioV);
+   // console.log('radio=',radioV);
+    
+       
+    if(radioVplus==='Cars'){
+        searchOpt='Cars';
+    }else if(radioVplus==='Sport'){
+        searchOpt='Sport';
+    }else{
+        searchOpt=getTimeOfDay();
+    }
+    
     if (radioV==='GitHub'){
     img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${getTimeOfDay()}/${String(randomNum).padStart(2, "0")}.jpg`;
     }else if(radioV==='UnSplash'){
-        const url = `https://api.unsplash.com/photos/random?query=${getTimeOfDay()}&client_id=D_7YNYfiG-mfgYe7FBSkQM5ImcOGy9uoGbHCHZIBwdk`;
+        const url = `https://api.unsplash.com/photos/random?query=${searchOpt}&client_id=D_7YNYfiG-mfgYe7FBSkQM5ImcOGy9uoGbHCHZIBwdk`;
         const res = await fetch(url);
         const data=await res.json();
-        console.log(data.urls.regular); 
+      //  console.log(data.urls.regular); 
         img.src = data.urls.regular;
     }else if(radioV==='Flickr'){
-        console.log('fff');
-        const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=3c365b91f9560c51f0f0ffe69eeb4f1f&tags=${getTimeOfDay()}&extras=url_l&format=json&nojsoncallback=1`;
+      //  console.log('fff');
+        const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=3c365b91f9560c51f0f0ffe69eeb4f1f&tags=${searchOpt}&extras=url_l&format=json&nojsoncallback=1`;
         const res = await fetch(url);
         const data=await res.json();
-        console.log('data=',data); 
-        console.log(data.photos.photo[randomNum]); 
+      //  console.log('data=',data); 
+      //  console.log(data.photos.photo[randomNum]); 
         img.src = data.photos.photo[randomNum].url_l;
     }
 

@@ -406,7 +406,87 @@ body {
  border-radius: 50%;
  background: #000000;
 }
+/*************************************************/
+.dispNone{
+  display: none;
+}
+.dispFlex{
+  display: flex;
+}
+.radio-plus{
+  
+  /*display: flex;*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  
 
+}
+.radio-container-plus {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  /*font-family: Roboto;*/
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio-container-plus input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark-plus {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio-container-plus:hover input ~ .checkmark-plus {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container-plus input:checked ~ .checkmark-plus {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-plus:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container-plus input:checked ~ .checkmark-plus:after {
+  display: block;
+} 
+
+.radio-container-plus .checkmark-plus:after {
+ top: 2px;
+ left: 2px;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #000000;
+}
+
+
+/*************************************************/
 .choose-lang-ru{
   width: 90px;
   height: 64px;
