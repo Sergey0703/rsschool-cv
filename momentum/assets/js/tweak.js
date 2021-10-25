@@ -32,7 +32,7 @@ if (document.querySelector('input[name="radio"]')) {
 const langBtn=document.querySelector('#choose-lang-ru');
 if(localStorage.getItem('lang')) {
     lang = localStorage.getItem('lang');
-    console.log('storL=',lang);
+   // console.log('storL=',lang);
     if(lang==='en'){
        
         inpName.placeholder="Enter your name";

@@ -11,7 +11,7 @@ async function getQuotes(){
     const quotes='./data.json';
     const res= await fetch(quotes);
     const data= await res.json();
-    console.log('data=',data);
+    //console.log('data=',data);
     if(lang==='en'){
     quotePlace.textContent=data[randomQuote].text;
     authorPlace.textContent=data[randomQuote].author;

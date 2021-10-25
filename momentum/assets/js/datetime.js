@@ -7,7 +7,7 @@ let options;
 
 let showDate =function(){
     const dat=new Date();
-    console.log('langg=',lang);
+  //  console.log('langg=',lang);
     if(lang==='en'){
         langD='en-En';
         options={weekday: 'long', month: 'long', day:'numeric'};

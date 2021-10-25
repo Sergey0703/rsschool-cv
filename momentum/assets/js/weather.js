@@ -26,7 +26,7 @@ async function getWeather(){
        // console.log('city3=',city);
           }
     }
-    console.log('city=',city);
+   // console.log('city=',city);
     const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=fda64f590dc732d29e589668fab412c5&units=metric`;
     const res = await fetch(url);
     if (res.ok) {
@@ -54,7 +54,7 @@ async function getWeather(){
 
 function setLocalStorageCity() {
     localStorage.setItem('city', cityInput.value);
-    
+
   }
 window.addEventListener('beforeunload', setLocalStorageCity);
 
