@@ -1,0 +1,555 @@
+@font-face {
+  font-family: 'Arial-MT';
+  src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+ }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 480px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  /*background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);*/
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 30vh;
+  min-height: 220px;  
+  padding: 20px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+ 
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.play-list {
+  text-align: left;
+}
+
+.play-item {
+  position: relative;
+  padding: 5px;
+  padding-left: 20px;
+  list-style: none;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.play-item:hover {
+  opacity: 1;
+}
+.item-active {
+  font-weight: 700;
+}
+/*
+.play-item::before {
+  content: "\2713";  
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-weight: 900;
+
+}*/
+.play-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("../assets/svg/play.svg");
+   
+}
+
+.item-active::before {
+  /*color: #C5B358;*/
+  background-image: url("../assets/svg/pause.svg");
+}
+
+.player-icon,
+.slider-icon,
+.change-quote {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;  
+}
+.mute-volume:hover,
+.player-icon:hover,
+.slider-icon:hover,
+.change-quote:hover {
+  opacity: 1;
+}
+
+.player-icon:active,
+.slider-icon:active,
+.change-quote:active {
+  border: 0;
+  outline: 0;  
+  transform: scale(1.1);
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: url("../assets/svg/play.svg");
+}
+
+.pause {
+  background-image: url("../assets/svg/pause.svg");
+}
+
+.play-prev {
+  background-image: url("../assets/svg/play-prev.svg");
+}
+
+.play-next {
+  background-image: url("../assets/svg/play-next.svg");
+}
+
+.progress{
+  height: 7px;
+  width: 160px;
+  outline: none;
+  /*transition: background 200ms ease-in;*/
+  background: #000000;
+  -webkit-appearance: none;
+}
+.progress::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #ffffff;
+}
+.progress-small {
+ /* background: linear-gradient(to right, #710707 0%, #710707 41%, #fff 40%, #fff 100%);*/
+ background: #000000;
+  /*border: solid 0px #24809E;
+  border-radius: 8px;*/
+  height: 5px;
+  width: 130px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress-small::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #ffffff;
+}
+
+.cntrl-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mute-volume{
+  cursor: pointer;
+  opacity: .8;
+ /* width: 30px;
+  height: 30px;*/
+}
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 5px;
+  width: 180px;
+  min-height: 180px;  
+  text-align: left;
+}
+
+.weather-error {
+  margin-top: -10px;
+}
+
+.description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.weather-icon {
+  font-size: 44px;
+}
+
+.city {
+  width: 170px;
+  height: 34px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;  
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+}
+
+.city::placeholder {  
+  font-size: 20px;
+  color: #fff;
+  opacity: .6;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  min-height: 260px;  
+  padding: 20px;
+}
+
+.slider-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+.slide-prev {
+  left: 20px;
+  background-image: url("../assets/svg/slider-prev.svg");
+}
+
+.slide-next {
+  right: 20px;
+  background-image: url("../assets/svg/slider-next.svg");
+}
+
+.time {
+  min-height: 124px;
+  margin-bottom: 10px;
+  font-family: 'Arial-MT';
+  font-size: 100px;
+  letter-spacing: -4px;  
+}
+
+.date {
+  min-height: 28px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.greeting-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+  min-height: 48px;
+  width: 100vw;
+  font-size: 40px;
+}
+
+.greeting {
+  flex: 1;  
+  padding: 10px;
+  text-align: right;
+}
+
+.name {
+  flex: 1;
+  max-width: 50%;
+  padding: 10px;
+  font-size: 40px;
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.name::placeholder {
+  color: #fff;
+  opacity: .6;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  min-height: 160px;  
+  padding: 20px;
+  position: relative;
+}
+
+.control-panel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  /*margin-right: 0;*/
+  opacity: .8;
+  height: 92px;
+  width: 422px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  justify-content: center;
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.radio{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+
+}
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  /*font-family: Roboto;*/
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+} 
+
+.radio-container .checkmark:after {
+ top: 2px;
+ left: 2px;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #000000;
+}
+/*************************************************/
+.dispNone{
+  display: none;
+}
+.dispFlex{
+  display: flex;
+}
+.radio-plus{
+  
+  /*display: flex;*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  
+
+}
+.radio-container-plus {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  /*font-family: Roboto;*/
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio-container-plus input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark-plus {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio-container-plus:hover input ~ .checkmark-plus {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container-plus input:checked ~ .checkmark-plus {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-plus:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container-plus input:checked ~ .checkmark-plus:after {
+  display: block;
+} 
+
+.radio-container-plus .checkmark-plus:after {
+ top: 2px;
+ left: 2px;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #000000;
+}
+
+
+/*************************************************/
+.choose-lang-ru{
+  width: 90px;
+  height: 64px;
+  background-size: 90px 64px;
+  background-image: url("../assets/img/Ru.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.choose-lang{
+  width: 90px;
+  height: 64px;
+  background-size: 90px 64px;
+    background-image: url("../assets/img/En.png");
+    color:black;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  }
+
+.change-quote {
+  margin-bottom: 30px;
+  background-image: url("../assets/svg/reload.svg");  
+}
+
+.quote {
+  min-height: 32px;
+}
+
+.author {
+  min-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .time {
+    min-height: 80px;
+    font-size: 72px;    
+  }
+
+  .greeting-container {
+    min-height: 40px;
+    font-size: 32px;
+  }
+
+  .greeting {
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 32px;
+    padding: 5px;
+  }
+  .choose-lang-ru{
+    width: 45px;
+    height: 32px;
+    background-size: 45px 32px;
+    background-image: url("../assets/img/ru.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
